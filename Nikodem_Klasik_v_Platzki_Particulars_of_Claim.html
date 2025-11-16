@@ -134,6 +134,18 @@
     line-height: 1.3;
   }
 
+  .exhibit-ref {
+    font-weight: bold;
+    color: #0b3f5c;
+    font-family: 'Courier New', monospace;
+    font-size: 9pt;
+  }
+
+  .timestamp {
+    font-family: 'Courier New', monospace;
+    font-size: 8pt;
+  }
+
   table {
     border-collapse: collapse;
     width: 100%;
@@ -153,6 +165,30 @@
     background: #e8eef5;
     font-weight: bold;
     color: #0b3f5c;
+  }
+
+  table tbody tr:nth-child(odd) td {
+    background: #ffffff;
+  }
+
+  table tbody tr:nth-child(even) td {
+    background: #ffffff;
+  }
+
+  .highlight-box {
+    border-left: 2pt solid #0b3f5c;
+    padding: 8pt 10pt;
+    margin: 8pt 0pt;
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+
+  .small-text {
+    font-size: 9pt;
+  }
+
+  .very-small {
+    font-size: 8pt;
   }
 
   hr.page-break {
@@ -186,20 +222,31 @@
     line-height: 1.8;
     margin: 40pt 0pt;
   }
+
 </style>
 </head>
 
 <body>
+
+<!-- ========== STRONA TYTUŁOWA ========== -->
 
 <div class="cover-page">
   <h1>PARTICULARS OF CLAIM</h1>
   <h2>NIKODEM KLASIK v PLATZKI LTD</h2>
 
   <div class="case-info">
-    <p><strong>Claimant (in person):</strong> Nikodem Klasik</p>
-    <p><strong>Respondent:</strong> Platzki Ltd, 229 Deansgate, Manchester, M1 4JQ</p>
-    <p><strong>Tribunal:</strong> Employment Tribunal (North West) - Manchester</p>
-    <p><strong>Case Number:</strong> [To be assigned by Tribunal]</p>
+    <p>
+      <strong>Claimant (in person):</strong> Nikodem Klasik
+    </p>
+    <p>
+      <strong>Respondent:</strong> Platzki Ltd, 229 Deansgate, Manchester, M1 4JQ
+    </p>
+    <p>
+      <strong>Tribunal:</strong> Employment Tribunal (North West) - Manchester
+    </p>
+    <p>
+      <strong>Case Number:</strong> [To be assigned by Tribunal]
+    </p>
   </div>
 
   <p style="margin: 50pt 0pt 20pt 0pt; font-size: 11pt; line-height: 1.6;">
@@ -220,14 +267,12 @@
     <strong>Date of Claim:</strong> 13 November 2025
     <br/>
     <strong>Prepared:</strong> 16 November 2025
-    <br/>
-    <strong>Document Series:</strong> ETAP 1 / Complete Bundle
   </p>
 </div>
 
-<hr class="page-break"/>
+<!-- ========== SEKCJA A0 ========== -->
 
-<h1>A0: CHRONOLOGY &amp; CASE SUMMARY</h1>
+<h1>A0: Chronology &amp; Case Summary</h1>
 
 <h2>Employment Context</h2>
 
@@ -235,259 +280,2427 @@
   <li><strong>Position:</strong> General Manager (GM), Platzki Ltd, 229 Deansgate, Manchester</li>
   <li><strong>Employment Period:</strong> 1 January 2025 - 13 October 2025 (9 months + 13 days)</li>
   <li><strong>Contracted Monthly Salary (net):</strong> GBP 2,800/month</li>
-  <li><strong>Tronc/Tips (average):</strong> GBP 550/month</li>
+  <li><strong>Tronc/Tips (average):</strong> GBP 550/month (pro-rata from payslip data)</li>
+  <li><strong>Contract Basis:</strong> Permanent, full-time, subject to ACAS procedures</li>
 </ul>
 
-<h2>Timeline</h2>
+<h2>Timeline of Key Events</h2>
 
-<h3>11 October 2025 - Medical Emergency &amp; Cover Arranged</h3>
+<h3>11 October 2025 (Saturday) - Medical Emergency &amp; Cover Arranged</h3>
+
+<p>
+  <strong>Context:</strong> Claimant's close friend Marek Piszczek required urgent hospital transport due to medical emergency.
+</p>
+
+<ul>
+  <li><strong>13:27-14:03:</strong> Uber trip to Royal Preston Hospital (medical records).</li>
+  <li><strong>14:26-14:31:</strong> Claimant attempts to reach employer Lukasz (phone calls logged).</li>
+  <li><strong>14:35-15:57:</strong> WhatsApp operational messages coordinating cover.</li>
+  <li><strong>15:14-15:23:</strong> Contact with Anastasia (staff member); confirmed arrival 16:30-17:00.</li>
+  <li><strong>15:29:</strong> Claimant email to employer regarding early departure.</li>
+</ul>
 
 <div class="quote-box">
-  <div class="quote-header">Email: Early Departure Notification</div>
+  <div class="quote-header">Email: Early Departure Notification (Cover Arranged)</div>
   <div class="quote-label">Reference: E0-EMAIL-001 | Date: 11/10/2025 15:29</div>
-  <div class="quote-label">Verbatim Text</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
   <div class="quote-verbatim">
     "I started work today at 11:40 and plan to leave at approximately 16:30, not before Anastasia arrives to take over the shift. Before leaving, I did everything I could to organise proper cover. As requested, I have left the company laptop on the premises."
   </div>
+
   <div class="quote-metadata">
-    <strong>Legal Significance:</strong> ERA s.57A (time off for dependants); Contract performance (cover provided).
+    <strong>Date/Time:</strong> <span class="timestamp">11/10/2025 15:29</span>
+    <br/>
+    <strong>Context:</strong> Claimant notifies of departure; confirms cover arrangement (Anastasia arriving 16:30-17:00); confirms operational continuity (laptop on premises).
+    <br/>
+    <strong>Legal Significance:</strong> ERA s.57A (time off for dependants - notice given); Contract performance (cover provided); Factual foundation for "moving goalposts" dispute.
   </div>
 </div>
 
-<h3>11 October 2025 - Employer Introduces "Authorisation" Requirement</h3>
+<h3>11 October 2025 (Evening) - Employer Rejects "Authorisation" &amp; Escalates</h3>
+
+<p>
+  <strong>Employer's response sequence - NEW RULE INTRODUCED:</strong>
+</p>
 
 <div class="quote-box">
-  <div class="quote-header">Email: Rejection of Cover</div>
+  <div class="quote-header">Email: Rejection of Cover / Introduction of "Not Authorised"</div>
   <div class="quote-label">Reference: E0-EMAIL-002 | Date: 11/10/2025 15:38</div>
-  <div class="quote-label">Verbatim Text</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
   <div class="quote-verbatim">
     "this was not authorised in advance. I organised the shift cover myself to ensure continuity of operations - not you."
   </div>
+
   <div class="quote-metadata">
-    <strong>Critical Issue:</strong> FIRST use of "not authorised". Operative standard was "cover" (which was arranged). Moving the goalposts.
+    <strong>Date/Time:</strong> <span class="timestamp">11/10/2025 15:38 (9 minutes after Claimant's email)</span>
+    <br/>
+    <strong>Critical Analysis:</strong> FIRST use of term "not authorised" in response. Operative standard had been "cover" (which was arranged). This is "moving the goalposts."
+    <br/>
+    <strong>Legal Significance:</strong> Breach of contract (novel rule ex post facto); Misrepresentation (denying Claimant's role in cover arrangement); Predetermination signal.
   </div>
 </div>
 
-<h3>12 October 2025 - Disciplinary Invitation</h3>
-
 <div class="quote-box">
-  <div class="quote-header">Email: Disciplinary Meeting Invitation</div>
-  <div class="quote-label">Reference: E0-INV-001 | Date: 12/10/2025 11:55</div>
-  <div class="quote-label">Verbatim Text</div>
+  <div class="quote-header">Email: Misstatement of Law &amp; Immediate Demand (Card Return)</div>
+  <div class="quote-label">Reference: E0-EMAIL-003 | Date: 11/10/2025 16:05-16:08</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
   <div class="quote-verbatim">
-    "Date: Monday, 13 October 2025 - Time: 1:00 p.m. Concerns: Leaving your shift early without prior authorisation, misrepresentation, failure to return company card. Relevant documentation and evidence will be presented during the hearing itself."
+    "Emergencies involving friends are not covered under UK employment law for time off for dependants. Please bring the company card back to the restaurant and leave it in a secure place today."
   </div>
+
   <div class="quote-metadata">
-    <strong>ACAS Code Breaches:</strong> Less than 24 hours notice (requires 48h); No pre-disclosure of evidence.
+    <strong>Date/Time:</strong> <span class="timestamp">11/10/2025 16:05-16:08</span>
+    <br/>
+    <strong>Legal Error:</strong> Employer asserts false law. ERA 1996 s.57A defines "dependant" broadly: "(a) a spouse, child or parent of the employee, or (b) a person who reasonably relies on the employee for care." Marek Piszczek qualifies: no family in UK; years of close relationship; reasonable reliance established (Claimant called; organised transport). 
+    <br/>
+    <strong>Legal Significance:</strong> Misstatement of law (ERA s.57A); Evidence of pretextual basis; Bad faith; Supports finding of unfair dismissal (s.98(4) ERA - reason given is false).
   </div>
 </div>
 
-<h3>13 October 2025 - Fit Note &amp; Dismissal</h3>
+<div class="quote-box">
+  <div class="quote-header">Email: Escalation / Formal Notice of Disciplinary Process</div>
+  <div class="quote-label">Reference: E0-EMAIL-004 | Date: 11/10/2025 20:44</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "You did not have authorisation to leave. It was me who organised the cover. This matter will be addressed formally. The company card must be returned today."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">11/10/2025 20:44 (5+ hours after initial response)</span>
+    <br/>
+    <strong>Pattern Analysis:</strong> Third email same day; escalated tone. Repeats false claim ("I organised cover" - contradicted by Claimant's email and WhatsApp evidence). Signals formal draconian process coming ("addressed formally"). Repeats card demand (now mandatory "today").
+    <br/>
+    <strong>Legal Significance:</strong> Predetermination; Misrepresentation (denying Claimant's cover role); Coercion; ACAS Code breach imminent (pattern of procedural threats).
+  </div>
+</div>
+
+<h3>12 October 2025 (Sunday) - Disciplinary Invitation; Employer Rejects Objections</h3>
 
 <div class="quote-box">
-  <div class="quote-header">Email: Health Disclosure (Fit Note)</div>
+  <div class="quote-header">Email: Disciplinary Meeting Invitation (Short Notice; No Pre-Disclosure)</div>
+  <div class="quote-label">Reference: E0-INV-001 | Date: 12/10/2025 11:55</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "Date: Monday, 13 October 2025 - Time: 1:00 p.m. Concerns: Leaving your shift early without prior authorisation, misrepresentation, failure to return company card. The meeting will be conducted in Polish. Translation or summaries will be provided where necessary. Relevant documentation and evidence will be presented during the hearing itself."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">12/10/2025 11:55 (Sunday; less than 24 hours notice for hearing)</span>
+    <br/>
+    <strong>Procedural Issues:</strong> Invitation sent Sunday for Monday hearing - less than 24 hours' notice. ACAS Code guidance recommends minimum 48 hours. Language: Polish (potential communication barrier). CRITICAL: "evidence will be presented during the hearing itself" - NO PRE-DISCLOSURE of evidence to allow Claimant preparation.
+    <br/>
+    <strong>Legal Significance:</strong> ACAS Code breaches (§12-14 insufficient notice; §2 no pre-disclosure); s.98(4) ERA (procedural unfairness); Language barrier potential (s.20-21 EqA).
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Email: Claimant's Objections to Process (Bias; ACAS Code Concerns)</div>
+  <div class="quote-label">Reference: E0-INV-OBJECTION | Date: 12/10/2025 15:29</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "As you were directly involved in the incident and Przemek - your husband and co-owner - it would not be possible to consider the process impartial. The notice does not meet the minimum reasonable timeframe. Evidence must be shared in advance."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">12/10/2025 15:29 (3+ hours after invitation)</span>
+    <br/>
+    <strong>Objections Raised:</strong> (1) Impartiality - chair (Lukasz) directly involved in 11/10 dispute; co-chair (Przemek, husband/co-owner) - no separation of roles. (2) Notice - less than 24 hours insufficient for fair preparation. (3) Disclosure - evidence must be shared in advance (ACAS Code §2 requirement).
+    <br/>
+    <strong>Legal Significance:</strong> ACAS Code §6 (impartiality); §12-14 (notice); §2 (disclosure); Professional procedural complaint by Claimant.
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Email: Employer Rejects Objections (Dismisses Impartiality Concern)</div>
+  <div class="quote-label">Reference: E0-INV-REPLY | Date: 12/10/2025 15:48</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "I will conduct the hearing, and Przemek will also be present. This is standard practice in small businesses. Relevant documentation and evidence will be presented and discussed during the hearing itself. The meeting will proceed as scheduled (13 Oct, 13:00)."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">12/10/2025 15:48 (19 minutes after Claimant's objection)</span>
+    <br/>
+    <strong>Response Analysis:</strong> Employer rejects impartiality concern ("standard practice in small businesses" - not ACAS standard). Rejects pre-disclosure (evidence "during the hearing itself" - reinforces ACAS Code §2 breach). Confirms hearing proceeds as scheduled - no accommodation of concerns.
+    <br/>
+    <strong>Legal Significance:</strong> ACAS Code breach confirmed (§6, §2, §12-14); Procedural unfairness (s.98(4) ERA); Predetermination signal (no genuine consideration of objections).
+  </div>
+</div>
+
+<h3>13 October 2025 (Monday) - Fit Note; Refusal to Postpone; 66-Minute Hearing; Dismissal</h3>
+
+<div class="quote-box">
+  <div class="quote-header">Email: Claimant's Health Disclosure (Fit Note; Regular Day Off)</div>
   <div class="quote-label">Reference: E0-EMAIL-INABILITY | Date: 13/10/2025 11:50</div>
-  <div class="quote-label">Verbatim Text</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
   <div class="quote-verbatim">
     "The disciplinary meeting has been scheduled on my regular day off. I have been signed off work by my GP due to stress (fit note attached) from 13/10/2025 to 13/11/2025. I am unable to attend the meeting as scheduled."
   </div>
+
   <div class="quote-metadata">
-    <strong>Legal Significance:</strong> Triggers EqA 2010 s.20-21 (reasonable adjustments duty).
+    <strong>Date/Time:</strong> <span class="timestamp">13/10/2025 11:50 (70 minutes before scheduled hearing at 13:00)</span>
+    <br/>
+    <strong>Health Disclosure:</strong> Claimant discloses: (1) Hearing scheduled on regular day off (operational context). (2) GP has issued fit note for stress (covers 13/10-13/11). (3) Attached fit note as evidence. (4) States "unable to attend" - implicitly requesting adjustment (postponement).
+    <br/>
+    <strong>Legal Significance:</strong> s.20-21 EqA (reasonable adjustments trigger - known health condition); s.15 EqA (discrimination arising from disability - stress); ACAS Code §10-15 (duty to consider health when scheduling); Contemporaneous notice of health issue.
   </div>
 </div>
 
 <div class="quote-box">
-  <div class="quote-header">Email: Dismissal Decision (66 Minutes Later)</div>
+  <div class="quote-header">Email: Employer Refusal to Postpone (Proceeds Despite Fit Note)</div>
+  <div class="quote-label">Reference: E0-EMAIL-PROCEED | Date: 13/10/2025 12:01 &amp; 12:49</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "Sickness absence does not automatically prevent a disciplinary process from proceeding. The disciplinary hearing will therefore proceed today at 13:00 as scheduled."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">12:01 (reply) | 12:49 (confirmation) - both same day, less than 1 hour before hearing</span>
+    <br/>
+    <strong>Breach Analysis:</strong> Employer categorically refuses to postpone. Does NOT offer reasonable adjustments: remote attendance, written evidence submission, postponement to post-fit-note period. Fit note explicitly indicates "stress" - relevant to ADHD context (medical file shows ongoing ADHD treatment). Proceeding despite clear health disclosure breaches s.20-21 EqA.
+    <br/>
+    <strong>Legal Significance:</strong> Breach of s.20-21 EqA (failure to make reasonable adjustments); s.15 EqA (discrimination arising from disability - stress); ACAS Code breach (duty to consider health); Procedural unfairness (s.98(4) ERA).
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Email: Dismissal Decision (14:06 Same Day; 66 Minutes from Start)</div>
   <div class="quote-label">Reference: E0-DISMISSAL-LETTER | Date: 13/10/2025 14:06</div>
-  <div class="quote-label">Verbatim Text</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
   <div class="quote-verbatim">
-    "Outcome of Disciplinary Hearing - Dismissal. Allegations considered: leaving without official authorisation, misleading statements about cover, failure to return company card. Your employment will therefore end on 13 October 2025."
+    "Outcome of Disciplinary Hearing - Dismissal. Allegations considered: leaving without official authorisation, misleading statements about cover, failure to return company card. Procedural challenge without basis, aimed at delaying the disciplinary process. Your employment will therefore end on 13 October 2025. Any appeal must be submitted in writing within 5 working days of receiving this letter."
   </div>
+
   <div class="quote-metadata">
-    <strong>Timing:</strong> 13:00 start to 14:06 dismissal = 66 minutes. Grossly inadequate for 3+ allegations. Indicative of predetermination.
+    <strong>Date/Time:</strong> <span class="timestamp">13/10/2025 14:06 (66 minutes after scheduled 13:00 start time)</span>
+    <br/>
+    <strong>Timing Analysis:</strong> 13:00 scheduled start to 14:06 dismissal sent = 66 minutes. For complex disciplinary involving multiple allegations, this is insufficient and indicative of predetermination.
+    <br/>
+    <strong>Critical Finding:</strong> Employer characterizes Claimant's ACAS Code objections (impartiality, notice, disclosure) as "procedural challenge without basis, aimed at delaying the disciplinary process" - contradicts fairness principle.
+    <br/>
+    <strong>Legal Significance:</strong> s.98(4) ERA (procedural unfairness); ACAS Code breach (summarized); Mischaracterization of Claimant's procedural objections; Appeal wording ambiguity (5 working days "of receiving" - will trigger 21/10 dispute).
+  </div>
+</div>
+
+<h3>13 October 2025 (Afternoon) - Public Termination Announcement</h3>
+
+<div class="quote-box">
+  <div class="quote-header">WhatsApp: Public Announcement (Public Humiliation; No Private Notification)</div>
+  <div class="quote-label">Reference: IMG-PG-13.10-1611 | Date: 13/10/2025 16:11</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "Hi everyone, I'd like to inform you that Nikodem is no longer employed at Platzki Ltd as of 13 October 2025. Please direct any operational or management questions to Lukasz or Przemek moving forward. Thank you for your cooperation and understanding. Best, Lukasz and Przemo."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">13/10/2025 16:11 (approximately 127 minutes after dismissal email sent at 14:06)</span>
+    <br/>
+    <strong>Public Humiliation:</strong> Public announcement to all staff (group WhatsApp) same day as dismissal. NO PRIOR PRIVATE NOTIFICATION to Claimant. Claimant learns of own termination from group message or only after group becomes aware.
+    <br/>
+    <strong>Legal Significance:</strong> Breach of implied term of mutual trust and confidence (contract law); EqA s.26 (Harassment - public humiliation); Breach of dignity (common law); Aggravated damages (breach of care in dismissal communication); Breach of ACAS Code (§3 communication standards).
+  </div>
+</div>
+
+<h3>14-17 October 2025 - Post-Dismissal Pressure &amp; Threats</h3>
+
+<div class="quote-box">
+  <div class="quote-header">Email: Post-Dismissal Demands (Equipment; Logins; 24-Hour Ultimatum)</div>
+  <div class="quote-label">Reference: E0-POST-DEMANDS-001 | Date: 14/10/2025</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "Please provide the login details (usernames and passwords) for all email accounts and supplier platforms. Return the following company property. Must be completed by the end of the day tomorrow."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">14/10/2025 (day after dismissal)</span>
+    <br/>
+    <strong>Post-Dismissal Pressure:</strong> Demands for sensitive login credentials (security risk); equipment return with 24-48 hour ultimatum. Occurs while Claimant is unfit for work (fit note covers 13/10-13/11); processing dismissal; facing financial consequences.
+    <br/>
+    <strong>Legal Significance:</strong> EqA s.26 (Harassment - pressure during health crisis/vulnerable period); ERA s.13 coercion (implied deduction threat); Post-termination penalty (aggravated damages); Breach of goodwill.
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Letter: Formal Legal Threats (IONOS; Squarespace; "Civil &amp; Criminal Channels")</div>
+  <div class="quote-label">Reference: E0-FORMAL-NOTICE | Date: 17/10/2025</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "Failure to comply within 48 hours will result in proceedings through IONOS Legal / Nominet DRS / civil and criminal channels."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">17/10/2025 (4 days after dismissal)</span>
+    <br/>
+    <strong>Escalation:</strong> Formal "Letter Before Action" (legal threat letter). Demands compliance within 48 hours. Threatens "civil and criminal channels" - inflammatory language for dispute over digital asset access.
+    <br/>
+    <strong>Legal Significance:</strong> EqA s.26 (Harassment - intimidation); Post-termination penalty; ERA s.13 coercion (indirect deduction threat via legal costs); Abuse of process (threatening criminal action for disputed admin access).
+  </div>
+</div>
+
+<h3>21 October 2025 - Appeal Window Dispute</h3>
+
+<div class="quote-box">
+  <div class="quote-header">Email: Appeal Deadline (Incorrect Calculation by Employer)</div>
+  <div class="quote-label">Reference: E0-APPEAL-EXPIRED-001 | Date: 21/10/2025</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "The timeframe for submitting a formal appeal expired on 20 October 2025 at 23:59."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">21/10/2025</span>
+    <br/>
+    <strong>Calculation Error:</strong> Employer asserts deadline of 20/10 23:59. Dismissal letter states "within 5 working days OF RECEIVING this letter". Claimant received letter 16/10. 5 working days from 16/10 = 23/10/2025. Employer's calculation (from 13/10 send date) is incorrect - "of receiving" means from receipt date, not send date. Claimant's appeal notice filed 17/10 (within correct deadline).
+    <br/>
+    <strong>Legal Significance:</strong> ACAS Code §4 breach (frustration of genuine right of appeal); Procedural unfairness (s.98(4) ERA); Misinterpretation of contractual term; Bad faith (employer counts from send date, not receipt).
   </div>
 </div>
 
 <hr class="page-break"/>
 
-<h1>A1: SUMMARY OF CLAIMS &amp; RELIEF</h1>
+<!-- ========== SEKCJA A1 ========== -->
 
-<h2>Seven Heads of Claim</h2>
+<h1>A1: Agreed Wages &amp; Underpayment (ERA s.13/s.23)</h1>
+
+<h2>A1.1 Contractual Salary &amp; Final Payment</h2>
+
+<h3>Contracted Monthly Salary (Net)</h3>
+
+<p>
+  <strong>Amount:</strong> GBP 2,800/month (net), payable in arrears.
+</p>
+
+<p>
+  <strong>Evidence from payslip data:</strong>
+</p>
+
+<div class="quote-box">
+  <div class="quote-header">Payslip (October 2025) - Salary Baseline</div>
+  <div class="quote-label">Reference: E1-PAY-001 | Date: 31/10/2025</div>
+  
+  <div class="quote-label">Document Data (Original)</div>
+  <div class="quote-verbatim">
+    Period: 1-13 Oct 2025 | Salary: GBP 1,190.00 | Tronc/tips: GBP 237.00 | Tax code: 1257L | Net pay: GBP 2,158.93
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Source:</strong> Official payslip document
+    <br/>
+    <strong>Analysis:</strong> Salary for 13 days (1-13 Oct) = GBP 1,190.00. Extrapolation to 31-day month: GBP 1,190 x (31/13) = GBP 2,837.69/month (gross). Tronc (gratuity share): GBP 237.00 for 13 days = pro-rata approximately GBP 565/month.
+    <br/>
+    <strong>Legal Significance:</strong> Factual basis for wage claim; verification of contracted salary and tronc baseline.
+  </div>
+</div>
+
+<h2>A1.2 Final Payment Breakdown (13 October 2025)</h2>
 
 <table>
   <thead>
     <tr>
-      <th>Head</th>
-      <th>Legal Basis</th>
-      <th>Key Facts</th>
+      <th>Component</th>
+      <th>Period / Description</th>
+      <th>Gross (GBP)</th>
+      <th>Notes</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>1. Unfair Dismissal</strong></td>
-      <td>ERA s.98(4); s.104</td>
-      <td>False reason; 6 ACAS breaches; predetermination; financial motive</td>
+      <td>Salary</td>
+      <td>1-13 Oct 2025</td>
+      <td>1,190.00</td>
+      <td>Pro-rata 13 days; monthly approximately GBP 2,837.69</td>
     </tr>
     <tr>
-      <td><strong>2. Disability Discrimination</strong></td>
-      <td>EqA s.15, s.20-21</td>
-      <td>ADHD diagnosis; no adjustments; fit note disregarded</td>
+      <td>Holiday pay</td>
+      <td>9.0 days accrued</td>
+      <td>1,163.97</td>
+      <td>Unused annual leave</td>
     </tr>
     <tr>
-      <td><strong>3. Harassment</strong></td>
-      <td>EqA s.26</td>
-      <td>9-month pattern; dehumanization; public humiliation</td>
+      <td>Tronc / Tips</td>
+      <td>1-13 Oct 2025</td>
+      <td>237.00</td>
+      <td>Pro-rata gratuity</td>
     </tr>
     <tr>
-      <td><strong>4. Unlawful Deduction</strong></td>
-      <td>ERA s.13</td>
-      <td>Equipment deduction threatened (GBP 530); no basis</td>
+      <td>TOTAL GROSS</td>
+      <td>-</td>
+      <td>2,590.97</td>
+      <td>-</td>
     </tr>
     <tr>
-      <td><strong>5. Additional Hours</strong></td>
-      <td>ERA s.13; Contract</td>
-      <td>40-70 hrs/month undocumented; GBP 17.09/hr rate</td>
+      <td>Less: Tax &amp; NI</td>
+      <td>Code 1257L</td>
+      <td>(432.04)</td>
+      <td>-</td>
     </tr>
     <tr>
-      <td><strong>6. Breach of Contract</strong></td>
-      <td>Implied Term</td>
-      <td>Mutual trust &amp; confidence violated</td>
-    </tr>
-    <tr>
-      <td><strong>7. ACAS Uplift</strong></td>
-      <td>s.207A TULRCA</td>
-      <td>25% uplift on compensatory award (6 breaches)</td>
+      <td>NET PAY</td>
+      <td>-</td>
+      <td>2,158.93</td>
+      <td>Confirmed receipt 15/11/2025</td>
     </tr>
   </tbody>
 </table>
 
-<h2>Financial Awards (Three Scenarios)</h2>
+<div class="quote-box">
+  <div class="quote-header">Final Payment Clarification (04 November 2025)</div>
+  <div class="quote-label">Reference: E1-FIN-CLARIFICATION | Date: 04/11/2025</div>
+  
+  <div class="quote-label">Document Data (Original)</div>
+  <div class="quote-verbatim">
+    Salary 1-13 Oct GBP 1,190.00 | Holiday pay 9.0 days GBP 1,163.97 | Tronc GBP 237.00 | Total gross GBP 2,590.97
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Source:</strong> Official employer clarification document
+    <br/>
+    <strong>Content:</strong> Confirms final payment breakdown post-dismissal. All components accounted for: salary to 13/10; holiday accrual (9 days); tronc share. CRITICAL: No deductions shown for equipment (locks, keys, scanner, charger), despite employer threats/claims of GBP 530 total value. This suggests employer did not actually apply deductions to final payment.
+    <br/>
+    <strong>Legal Significance:</strong> Evidence that unlawful deduction threat was not implemented to final payment; nonetheless, threats were made and constitute coercion under ERA s.13.
+  </div>
+</div>
+
+<h2>A1.3 Equipment "Deductions" - Threatened but Not Applied (Yet)</h2>
+
+<p>
+  <strong>Claimed Depreciation/Replacement Costs:</strong>
+</p>
 
 <table>
   <thead>
     <tr>
-      <th>Scenario</th>
-      <th>Compensatory Award</th>
-      <th>ACAS Uplift</th>
-      <th>Injury to Feelings</th>
-      <th>Additional Hours</th>
-      <th>TOTAL</th>
+      <th>Item</th>
+      <th>Stated Value (GBP)</th>
+      <th>Employer Justification</th>
+      <th>Claimant's Response</th>
+      <th>Legal Status</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>Conservative (12m)</strong></td>
-      <td>GBP 26,035</td>
-      <td>GBP 6,509</td>
-      <td>GBP 25,000</td>
-      <td>GBP 5,144</td>
-      <td><strong>GBP 76,688</strong></td>
+      <td>Locks &amp; keys (replacement)</td>
+      <td>250</td>
+      <td>"Accounted as replaced by company"</td>
+      <td>No evidence of loss attributable to Claimant; unilateral valuation</td>
+      <td>No legal basis; unilateral claim without agreement</td>
     </tr>
     <tr>
-      <td><strong>Mid-Range (12m)</strong></td>
-      <td>GBP 26,035</td>
-      <td>GBP 6,509</td>
-      <td>GBP 32,000</td>
-      <td>GBP 7,600</td>
-      <td><strong>GBP 98,644</strong></td>
+      <td>Document scanner</td>
+      <td>200</td>
+      <td>Alleged loss/damage</td>
+      <td>Item returned in good working condition; no damage evidence</td>
+      <td>No legal basis (item returned; no proven damage)</td>
     </tr>
     <tr>
-      <td><strong>Full Damages (18m)</strong></td>
-      <td>GBP 41,553</td>
-      <td>GBP 10,388</td>
-      <td>GBP 40,000</td>
-      <td>GBP 8,994</td>
-      <td><strong>GBP 137,935</strong></td>
+      <td>Apple MacBook charger</td>
+      <td>80</td>
+      <td>Alleged loss</td>
+      <td>Item returned to employer; no refusal evidenced</td>
+      <td>No legal basis (item returned)</td>
+    </tr>
+    <tr>
+      <td>SUBTOTAL THREATENED</td>
+      <td>530</td>
+      <td colspan="2">-</td>
+      <td>-</td>
     </tr>
   </tbody>
 </table>
 
-<hr class="page-break"/>
-
-<h1>A2: KEY EVIDENCE EXCERPTS</h1>
-
-<h2>Medical Disability (ADHD)</h2>
-
 <div class="quote-box">
-  <div class="quote-header">Psychiatrist Assessment (DIVA-5 Diagnostic Interview)</div>
-  <div class="quote-label">Reference: MED-PSY-001 | Date: 29/09/2025 (14 days before dismissal)</div>
-  <div class="quote-label">Finding</div>
+  <div class="quote-header">Equipment Deduction Threat (Letter Before Action; 14-17 Oct)</div>
+  <div class="quote-label">Reference: E1-THREAT-001 | Date: 14-17/10/2025</div>
+  
+  <div class="quote-label">Verbatim Text (Original - Polish)</div>
   <div class="quote-verbatim">
-    Diagnosis: ADHD confirmed via DIVA-5.0 | Previous diagnosis: Poland, February 2024 | Current presentation: Seeking medication and coaching to manage symptoms
+    "...spolka zastrzega sobie prawo do potracenia tej kwoty z Twojej wyplaty koncowej... Jesli kwota przekroczy... spolka zastrzega sobie prawo do dochodzenia roszczenia (Small Claims Court)... zwroc w 24 godziny..."
   </div>
-  <div class="quote-metadata">
-    <strong>Legal Significance:</strong> ADHD is a disability under EqA 2010 s.6. Diagnosis established 14 days before dismissal on 13 October 2025.
-  </div>
-</div>
 
-<h2>Stress-Related Medical Unfitness</h2>
-
-<div class="quote-box">
-  <div class="quote-header">Fit Note (eMED3): Stress - Medical Unfitness</div>
-  <div class="quote-label">Reference: MED-FITNOTE-001 | Date: 13/10/2025</div>
-  <div class="quote-label">Finding</div>
-  <div class="quote-verbatim">
-    Medical Condition: Stress | Duration: 13/10/2025 - 14/11/2025 | Period: 4 weeks 6 days
-  </div>
-  <div class="quote-metadata">
-    <strong>Legal Significance:</strong> Issued SAME DAY as disciplinary hearing. Proves Claimant was medically unfit for work on day of dismissal.
-  </div>
-</div>
-
-<h2>Financial Motive (Cash-Flow Crisis)</h2>
-
-<div class="quote-box">
-  <div class="quote-header">Chat Message: Employer's Cash-Flow Crisis Disclosure</div>
-  <div class="quote-label">Reference: E2-CRISIS-001 | Date: 03/10/2025 12:58</div>
-  <div class="quote-label">Verbatim Text (Polish)</div>
-  <div class="quote-verbatim">
-    "Po prostu nie mam pieniędzy na połowę wypłat i wasze składki, rozumiesz?"
-  </div>
   <div class="quote-label">Translation (English)</div>
   <div class="quote-translation">
-    "I simply don't have money for half the wages and your contributions, do you understand?"
+    "...the company reserves the right to deduct this amount from your final wages... if the total exceeds... the company reserves the right to pursue (Small Claims Court)... return within 24 hours..."
   </div>
+
   <div class="quote-metadata">
-    <strong>Date/Time:</strong> 03/10/2025 12:58 (10 DAYS BEFORE dismissal on 13/10)
+    <strong>Date/Time:</strong> <span class="timestamp">14/10/2025 (equipment demands); 17/10/2025 (formal letter)</span>
     <br/>
-    <strong>Significance:</strong> Employer explicitly discloses financial crisis. Dismissal of senior manager (GBP 2,800/month) follows 10 days later. Clear evidence of financial motive for cost-cutting, undermining credibility of stated disciplinary reason.
+    <strong>Context:</strong> Post-dismissal, employer sends formal letter threatening: (1) Deduction from final wages of disputed equipment values. (2) If total exceeds certain threshold, pursue civil claim (Small Claims Court). (3) 24-hour return ultimatum. Final payment document (04/11) shows NO deduction actually applied. Therefore, threat was made but not executed.
+    <br/>
+    <strong>Legal Significance:</strong> ERA s.13 (unlawful deduction threat - even if not executed, threat is a violation); Coercion; Post-termination harassment (EqA s.26); Breach of mutual trust and confidence.
   </div>
 </div>
 
-<h2>Harassment - Dehumanizing Language</h2>
+<h2>A1.4 Legal Analysis (ERA s.13 &amp; s.23)</h2>
+
+<p>
+  <strong>ERA 1996 s.13 - Unlawful Deductions:</strong> An employer shall not make deductions from wages unless:
+</p>
+
+<ol>
+  <li>Authorised by written contract, OR</li>
+  <li>Authorised by statute, OR</li>
+  <li>Agreed in writing by the employee.</li>
+</ol>
+
+<p>
+  <strong>Application to this case:</strong>
+</p>
+
+<ul>
+  <li><strong>No contractual clause:</strong> Employment contract (CP-01) contains NO clause authorising deduction for equipment loss/damage.</li>
+  <li><strong>No statutory authority:</strong> No statute authorises employer to deduct equipment values from wages.</li>
+  <li><strong>No written agreement:</strong> Claimant did NOT agree to deduction. Employer unilaterally "declared" values and threatened deduction.</li>
+</ul>
+
+<p>
+  <strong>Conclusion:</strong> Any deduction attempted (or threatened) violates ERA s.13 and ERA s.23 (restriction on contracting out of rights).
+</p>
+
+<h2>A1.5 Relief Sought (A1)</h2>
+
+<ol>
+  <li><strong>Confirmation:</strong> All wages due for 1-13 October 2025 were lawfully paid in accordance with contract (no unlawful deduction made).</li>
+  <li><strong>Declaration:</strong> Any post-dismissal threat to deduct equipment values is unlawful under ERA s.13.</li>
+  <li><strong>Injunction (interim):</strong> Employer is prohibited from making any such deduction from future payments, pension, or benefits.</li>
+  <li><strong>Statutory interest:</strong> On any established underpayment, at 8% per annum from the date of underpayment (from 13/10/2025).</li>
+  <li><strong>Costs &amp; expenses:</strong> Legal and tribunal fees incurred in defence of unlawful deduction threat.</li>
+</ol>
+
+<p style="border-left: 2pt solid #0b3f5c; padding: 8pt 10pt; margin: 8pt 0pt; font-size: 10pt; widows: 3; orphans: 3;">
+  <strong>Note for A10 (Global Schedule):</strong> Section A1 establishes that final payment was lawful (no deduction applied). However, the threat itself is actionable under ERA s.13 (unlawful deduction threat) and contributes to harassment/coercion under EqA s.26 and breach of mutual trust and confidence. Impact on damages will be assessed in context of full fact pattern (A1-A12).
+</p>
+
+<p style="page-break-after: always; margin: 0pt; padding: 0pt;">
+  &nbsp;
+</p>
+
+<!-- ========== SEKCJA A2 ========== -->
+
+<h1>A2: Additional Hours &amp; Overtime Work</h1>
+
+<h2>A2.1 Scope Creep &amp; Operational Context</h2>
+
+<p>
+  While contracted as General Manager (GM), the Claimant's actual duties expanded beyond standard managerial role to include:
+</p>
+
+<ol>
+  <li><strong>Floor cover:</strong> Shift work on the dining room / service floor when staff were reduced or absent.</li>
+  <li><strong>Administrative burden:</strong> Centralised purchase authorisation (every transaction requiring manager sign-off); stock control reporting; system management.</li>
+  <li><strong>Undocumented labour:</strong> Direction not to log time in the system, creating audit trail gap for hours worked.</li>
+</ol>
+
+<h2>A2.2 Evidence (Verbatim Quotes)</h2>
 
 <div class="quote-box">
-  <div class="quote-header">Chat Message: Dehumanization &amp; Robot Metaphor</div>
+  <div class="quote-header">Chat Message: Prohibition on Time Logging (Harassment / ERA s.13 Risk)</div>
+  <div class="quote-label">Reference: E2-NOLOG-003 | Date: 05/02/2025 13:04:43</div>
+  
+  <div class="quote-label">Verbatim Text (Original - Polish)</div>
+  <div class="quote-verbatim">
+    "Od dzisiaj nie wpisuj kurwa nic w system."
+  </div>
+
+  <div class="quote-label">Translation (English)</div>
+  <div class="quote-translation">
+    "From today don't f***ing enter anything in the system."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">05/02/2025 13:04:43</span>
+    <br/>
+    <strong>Context:</strong> Direct instruction to cease time-logging. Creates objective audit trail gap; prevents documentation of hours worked; exposes to non-payment risk by eliminating evidence of work performed.
+    <br/>
+    <strong>Legal Significance:</strong> ERA s.13 (unlawful deduction risk - failure to pay for undocumented work); EqA s.26 (harassment - aggressive tone/vulgarity); Breach of contract (implied duty to pay for work done).
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Chat Message: Follow-up Instruction (Invoices - Continued Time-Logging Ban)</div>
+  <div class="quote-label">Reference: E2-NOLOG-003B | Date: 05/02/2025 13:41:28</div>
+  
+  <div class="quote-label">Verbatim Text (Original - Polish)</div>
+  <div class="quote-verbatim">
+    "pierdol te wpisywanie codziennych dostaw faktur."
+  </div>
+
+  <div class="quote-label">Translation (English)</div>
+  <div class="quote-translation">
+    "Screw entering daily delivery invoices."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">05/02/2025 13:41:28</span>
+    <br/>
+    <strong>Context:</strong> Follow-up instruction: no logging of invoices (part of daily purchasing/admin task for GM). Vulgarity reinforces hostile tone.
+    <br/>
+    <strong>Legal Significance:</strong> ERA s.13 (undocumented administrative hours); EqA s.26 (harassment via aggressive language); Scope creep (admin burden without documentation or remuneration).
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Chat Message: Dehumanising Management Language</div>
   <div class="quote-label">Reference: E2-DEHUMAN-001 | Date: 05/02/2025 13:42:01</div>
-  <div class="quote-label">Verbatim Text (Polish)</div>
+  
+  <div class="quote-label">Verbatim Text (Original - Polish)</div>
   <div class="quote-verbatim">
     "Rob najwazniejsze rzeczy i steruj ludzmi jak robotami. I ty tez narazie zamien sie robota. Taki klimat."
   </div>
+
   <div class="quote-label">Translation (English)</div>
   <div class="quote-translation">
     "Do the most important things and control people like robots. And for now you become a robot too. That's the vibe."
   </div>
+
   <div class="quote-metadata">
-    <strong>Date/Time:</strong> 05/02/2025 13:42:01
+    <strong>Date/Time:</strong> <span class="timestamp">05/02/2025 13:42:01</span>
     <br/>
-    <strong>Significance:</strong> Explicit dehumanization. Management philosophy: treat employees as objects. Violation of dignity. EqA s.26 Harassment established.
+    <strong>Context:</strong> Explicit dehumanisation of management approach. Instruction to treat staff as "robots" (objects, not humans); Claimant included ("you become a robot too"). Creates degrading, hostile environment.
+    <br/>
+    <strong>Legal Significance:</strong> EqA s.26 (Harassment - violation of dignity); Breach of mutual trust and confidence; Hostile work environment; Dehumanising management style unsuitable for any role, especially managerial.
   </div>
 </div>
 
-<p style="margin-top: 60pt; font-size: 10pt; text-align: center; color: #666;">
-  <strong>STATEMENT OF TRUTH</strong>
+<h2>A2.3 Hours Benchmark &amp; Implied Hourly Rate</h2>
+
+<div class="quote-box">
+  <div class="quote-header">Internal Record: Monthly Hours Allocation</div>
+  <div class="quote-label">Reference: E2-HOURS-001 | Date: 31/01/2025</div>
+  
+  <div class="quote-label">Verbatim Text (Original - Polish)</div>
+  <div class="quote-verbatim">
+    "Łukasz i Przemek salary 1850 / Nikodem 2800 / Alona 2250. Łukasz tronc 160 godzin / Nikodem 196 godzin / Alona 160 godzin / Reszta według godzin które przepracowali."
+  </div>
+
+  <div class="quote-label">Translation (English)</div>
+  <div class="quote-translation">
+    "Lukasz and Przemek salary 1850 / Nikodem 2800 / Alona 2250. Lukasz tronc 160 hours / Nikodem 196 hours / Alona 160 hours / Rest according to hours they worked."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">31/01/2025</span>
+    <br/>
+    <strong>Analysis:</strong> Monthly hour benchmark for Claimant: 196 hours. This is used to calculate tronc (gratuity) allocation. Extrapolating from gross salary approximately GBP 3,300-3,400/month: GBP 3,350 / 196 hours = GBP 17.09/hour (gross).
+    <br/>
+    <strong>Legal Significance:</strong> Factual basis for calculating hourly rate; evidence of scope of documented hours; comparison benchmark for undocumented additional work.
+  </div>
+</div>
+
+<h2>A2.4 Additional Hours Estimate &amp; Claim</h2>
+
+<p>
+  <strong>Scope creep areas (undocumented):</strong>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Activity</th>
+      <th>Description</th>
+      <th>Estimated Hours/Month</th>
+      <th>Evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Floor cover</td>
+      <td>Shift work when staff reduced/absent</td>
+      <td>10-30</td>
+      <td>Chat messages re: staffing</td>
+    </tr>
+    <tr>
+      <td>Purchase auth.</td>
+      <td>Every purchase &lt;GBP 20 needs sign-off</td>
+      <td>20-40</td>
+      <td>Chat 29/08: "przed każdym zamówieniem"</td>
+    </tr>
+    <tr>
+      <td>Stock reporting</td>
+      <td>Weekly stock control reports</td>
+      <td>8-12</td>
+      <td>Chat 29/08: "Stock control weekly reports"</td>
+    </tr>
+    <tr>
+      <td>System mgmt</td>
+      <td>Database, user access, IT support</td>
+      <td>5-15</td>
+      <td>Post-dismissal: login credentials demands</td>
+    </tr>
+    <tr>
+      <td style="background: #ffffff;"><strong>TOTAL/MONTH</strong></td>
+      <td style="background: #ffffff;"><strong>-</strong></td>
+      <td style="background: #ffffff;"><strong>43-97</strong></td>
+      <td style="background: #ffffff;"><strong>Conservative mid-point: 70 hours/month</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  <strong>Financial motive context (cost-cutting):</strong>
+</p>
+
+<div class="quote-box">
+  <div class="quote-header">Chat Message: Employer's Cash-Flow Crisis Disclosure</div>
+  <div class="quote-label">Reference: E2-CRISIS-001 | Date: 03/10/2025 12:58</div>
+  
+  <div class="quote-label">Verbatim Text (Original - Polish)</div>
+  <div class="quote-verbatim">
+    "Po prostu nie mam pieniędzy na połowę wypłat i wasze składki, rozumiesz?"
+  </div>
+
+  <div class="quote-label">Translation (English)</div>
+  <div class="quote-translation">
+    "I simply don't have money for half the wages and your contributions, do you understand?"
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">03/10/2025 12:58 (10 days before dismissal on 13/10)</span>
+    <br/>
+    <strong>Significance:</strong> Employer explicitly discloses financial crisis: insufficient funds for "half the wages" (suggesting staff reduction needed) and NI contributions. Dismissal of senior manager earning GBP 2,800/month follows 10 days later. This is key context for financial motive (ERA s.98(4) unfairness).
+    <br/>
+    <strong>Legal Significance:</strong> Financial motive for dismissal; evidence that reason given ("unauthorised departure") is pretext for cost-cutting.
+  </div>
+</div>
+
+<h2>A2.5 Additional Hours Calculation (Claim)</h2>
+
+<p>
+  <strong>Conservative scenario (40 hours/month undocumented):</strong>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Calculation</th>
+      <th>Amount (GBP)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hourly rate (gross)</td>
+      <td>GBP 3,350 / 196 hours</td>
+      <td>GBP 17.09/hour</td>
+    </tr>
+    <tr>
+      <td>Additional hours/month</td>
+      <td>40 hours conservative</td>
+      <td>40 hours</td>
+    </tr>
+    <tr>
+      <td>Monthly additional gross</td>
+      <td>40 × GBP 17.09</td>
+      <td>GBP 684</td>
+    </tr>
+    <tr>
+      <td>Over 9.4 months employment</td>
+      <td>GBP 684 × 9.4</td>
+      <td>GBP 6,430</td>
+    </tr>
+    <tr>
+      <td>After tax conversion (80%)</td>
+      <td>GBP 6,430 × 0.80</td>
+      <td>GBP 5,144</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  <strong>Full scenario (70 hours/month undocumented):</strong>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Calculation</th>
+      <th>Amount (GBP)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hourly rate (gross)</td>
+      <td>GBP 3,350 / 196 hours</td>
+      <td>GBP 17.09/hour</td>
+    </tr>
+    <tr>
+      <td>Additional hours/month</td>
+      <td>70 hours full range</td>
+      <td>70 hours</td>
+    </tr>
+    <tr>
+      <td>Monthly additional gross</td>
+      <td>70 × GBP 17.09</td>
+      <td>GBP 1,196</td>
+    </tr>
+    <tr>
+      <td>Over 9.4 months employment</td>
+      <td>GBP 1,196 × 9.4</td>
+      <td>GBP 11,242</td>
+    </tr>
+    <tr>
+      <td>After tax conversion (80%)</td>
+      <td>GBP 11,242 × 0.80</td>
+      <td>GBP 8,994</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A2.6 Relief Sought (A2)</h2>
+
+<ol>
+  <li><strong>Declaration:</strong> Claimant was required to perform additional hours (40-70 per month) beyond 196-hour benchmark.</li>
+  <li><strong>Payment:</strong> Undocumented additional hours to be paid at implied hourly rate (GBP 17.09/hour gross).</li>
+  <li><strong>Award range:</strong> Conservative GBP 5,144 to Full GBP 8,994.</li>
+  <li><strong>Statutory interest:</strong> 8% per annum from each month worked (Feb-Oct 2025).</li>
+  <li><strong>Alternative:</strong> If hours cannot be precisely quantified, award a reasonable lump sum (GBP 6,500) based on scope creep evidence.</li>
+</ol>
+
+<p style="page-break-after: always; margin: 0pt; padding: 0pt;">
+  &nbsp;
+</p>
+
+<!-- ========== SEKCJA A3 ========== -->
+
+<h1>A3: Procedural Fairness &amp; ACAS Code Breaches</h1>
+
+<h2>A3.1 Six Core ACAS Code Breaches</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Breach</th>
+      <th>ACAS §</th>
+      <th>What Happened</th>
+      <th>Why Unreasonable</th>
+      <th>Consequential to Unfairness?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. Short notice</strong></td>
+      <td>§12-14</td>
+      <td>&lt;24 hours notice</td>
+      <td>Manifestly insufficient; ACAS standard = 48h minimum</td>
+      <td>YES - No time for evidence prep</td>
+    </tr>
+    <tr>
+      <td><strong>2. No pre-disclosure</strong></td>
+      <td>§2</td>
+      <td>Evidence "at hearing" only</td>
+      <td>Fundamental right denied to prepare defence</td>
+      <td>YES - Can't address allegations</td>
+    </tr>
+    <tr>
+      <td><strong>3. Biased chair</strong></td>
+      <td>§6</td>
+      <td>Lukasz (involved in dispute) conducts; Przemek (spouse/co-owner) present</td>
+      <td>No separation of roles; perception of bias</td>
+      <td>YES - Can't believe in impartiality</td>
+    </tr>
+    <tr>
+      <td><strong>4. Health ignored</strong></td>
+      <td>§10-15</td>
+      <td>Fit note disregarded; no adjustment offered</td>
+      <td>Employer has duty to consider health; no effort to do so</td>
+      <td>YES - Discriminatory; unfair</td>
+    </tr>
+    <tr>
+      <td><strong>5. 66-minute hearing</strong></td>
+      <td>§6-9</td>
+      <td>From 13:00 to 14:06 (1 hour 6 min)</td>
+      <td>Grossly inadequate for 3+ allegations; predetermination evident</td>
+      <td>YES - Indicates rushed/unjust</td>
+    </tr>
+    <tr>
+      <td><strong>6. Appeal deadline miscounted</strong></td>
+      <td>§4</td>
+      <td>Counted from send (13/10), not receipt (16/10)</td>
+      <td>Contract says "within 5 working days of receiving"; employer ignores "receiving"</td>
+      <td>YES - Frustrates appeal right</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A3.2 Predetermination Evidence</h2>
+
+<div class="quote-box">
+  <div class="quote-header">Chat Messages: Trust Assessment (Before Formal Disciplinary)</div>
+  <div class="quote-label">Reference: E3-TRUST-001 &amp; E3-TRUST-002 | Date: 10/10/2025</div>
+  
+  <div class="quote-label">Verbatim Text 1 (Original - Polish)</div>
+  <div class="quote-verbatim">
+    "tutaj zaufania już nie masz"
+  </div>
+
+  <div class="quote-label">Translation 1 (English)</div>
+  <div class="quote-translation">
+    "you don't have trust here anymore"
+  </div>
+
+  <div class="quote-label">Verbatim Text 2 (Original - Polish)</div>
+  <div class="quote-verbatim">
+    "co do braku zaufania to już o tym wiem"
+  </div>
+
+  <div class="quote-label">Translation 2 (English)</div>
+  <div class="quote-translation">
+    "as for lack of trust, I already know about that"
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">10/10/2025 (3 days BEFORE formal disciplinary invitation on 12/10)</span>
+    <br/>
+    <strong>Significance:</strong> Employer sends messages asserting loss of trust and predetermining outcome before any formal hearing. This is classic predetermination: decision made before fair process undertaken.
+    <br/>
+    <strong>Legal Significance:</strong> s.98(4) ERA (procedural unfairness); ACAS Code §6 (impartiality breach); Evidence of bad faith in disciplinary process.
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">WhatsApp: Public Isolation Instruction (Group Message)</div>
+  <div class="quote-label">Reference: E3-ISOLATION-001 | Date: 10/10/2025 16:32</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "Private messages to Nikodem will not be accepted... disciplinary action will be taken."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">10/10/2025 16:32 (before formal invitation; to group, not Claimant directly)</span>
+    <br/>
+    <strong>Significance:</strong> Public directive isolating Claimant from staff. Sent to entire staff group; effectively announces disciplinary process before Claimant formally notified. Intimidates staff from communicating with Claimant.
+    <br/>
+    <strong>Legal Significance:</strong> EqA s.26 (Harassment - isolation); Predetermination; Violation of dignity; ACAS Code §3 (communication standards).
+  </div>
+</div>
+
+<h2>A3.3 Appeal Window Frustration</h2>
+
+<div class="quote-box">
+  <div class="quote-header">Dismissal Letter: Appeal Deadline Language</div>
+  <div class="quote-label">Reference: E3-APPEAL-LETTER | Date: 13/10/2025 14:06</div>
+  
+  <div class="quote-label">Verbatim Text</div>
+  <div class="quote-verbatim">
+    "Any appeal must be submitted in writing within 5 working days of receiving this letter."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">13/10/2025 14:06</span>
+    <br/>
+    <strong>Letter Received:</strong> <span class="timestamp">16/10/2025 (3 days later; standard post delivery)</span>
+    <br/>
+    <strong>Correct Deadline Calculation:</strong> 5 working days from 16/10 = 23/10/2025
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Employer's Deadline Assertion (Incorrect Calculation)</div>
+  <div class="quote-label">Reference: E3-APPEAL-EXPIRED | Date: 21/10/2025</div>
+  
+  <div class="quote-label">Verbatim Text</div>
+  <div class="quote-verbatim">
+    "The timeframe for submitting a formal appeal expired on 20 October 2025 at 23:59."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">21/10/2025</span>
+    <br/>
+    <strong>Employer's Calculation:</strong> 5 working days from 13/10 (send date) = ~20/10
+    <br/>
+    <strong>Error:</strong> Letter states "OF RECEIVING" - this means receipt date (16/10), not send date (13/10).
+    <br/>
+    <strong>Claimant's Appeal:</strong> Filed 17/10 - within correct deadline of 23/10
+    <br/>
+    <strong>Legal Significance:</strong> ACAS Code §4 breach (frustration of appeal right); Procedural unfairness (s.98(4) ERA); Contract interpretation error (bad faith).
+  </div>
+</div>
+
+<h2>A3.4 Summary of Procedural Defects</h2>
+
+<p>
+  The disciplinary process contained six fundamental ACAS Code breaches, all "unreasonable" and all "consequential" to the dismissal being unfair under ERA s.98(4):
+</p>
+
+<ol>
+  <li><strong>§12-14 Notice breach:</strong> &lt;24 hours given; ACAS minimum 48 hours</li>
+  <li><strong>§2 Disclosure breach:</strong> No pre-disclosure of evidence; "at hearing" only</li>
+  <li><strong>§6 Impartiality breach:</strong> Chair (Lukasz) was party to dispute; co-chair spouse/co-owner</li>
+  <li><strong>§10-15 Health breach:</strong> Fit note disregarded; no adjustments offered</li>
+  <li><strong>§6-9 Hearing adequacy breach:</strong> 66-minute hearing for 3+ allegations (predetermination evident)</li>
+  <li><strong>§4 Appeal breach:</strong> Deadline miscalculated; appeal right frustrated</li>
+</ol>
+
+<p>
+  Each breach, individually, would be unreasonable. Cumulatively, they establish gross procedural unfairness under ERA s.98(4).
+</p>
+
+<hr class="page-break"/>
+
+<h1>A4: Disability Discrimination &amp; ADHD (EqA 2010 s.15, s.20-21)</h1>
+
+<h2>A4.1 Disability Status &amp; Medical Evidence</h2>
+
+<div class="quote-box">
+  <div class="quote-header">ASRS Screening Results (Adult ADHD Self-Report Scale)</div>
+  <div class="quote-label">Reference: MED-ASRS-001 | Date: 22/07/2025</div>
+  
+  <div class="quote-label">Document Data</div>
+  <div class="quote-verbatim">
+    ASRS Screening Score: 6/6 (Maximum) | Result: "Highly consistent with ADHD" | Assessment completed: thinkADHD online platform
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">22/07/2025</span>
+    <br/>
+    <strong>Content:</strong> Standardised self-report screening using ASRS (World Health Organization endorsed). Score of 6/6 indicates high probability of ADHD.
+    <br/>
+    <strong>Legal Significance:</strong> Contemporaneous medical assessment; establishes disability existed before dismissal (July 2025, months before 13/10 dismissal).
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Psychiatrist Assessment (DIVA-5 Diagnostic Interview)</div>
+  <div class="quote-label">Reference: MED-PSY-001 | Date: 29/09/2025</div>
+  
+  <div class="quote-label">Document Data</div>
+  <div class="quote-verbatim">
+    Diagnosis: ADHD confirmed via DIVA-5.0 | Clinical Assessment by psychiatrist | Previous diagnosis: Poland, February 2024 | Current presentation: Seeking medication and coaching to manage symptoms
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">29/09/2025 (14 days before dismissal)</span>
+    <br/>
+    <strong>Content:</strong> Formal psychiatric diagnosis using DIVA-5 (Diagnostic Interview for ADHD in Adults). Confirms previous diagnosis from Poland (Feb 2024). Assessment shows ongoing symptoms requiring management.
+    <br/>
+    <strong>Legal Significance:</strong> ADHD is a neurodevelopmental disability under EqA 2010 s.6 (disability if substantially limits normal day-to-day activities). Diagnosis dated 14 days before dismissal.
+  </div>
+</div>
+
+<h2>A4.2 Stress-Related Fitness (Fit Note)</h2>
+
+<div class="quote-box">
+  <div class="quote-header">Fit Note (eMED3): Initial Period</div>
+  <div class="quote-label">Reference: MED-FITNOTE-001 | Date: 13/10/2025</div>
+  
+  <div class="quote-label">Document Data</div>
+  <div class="quote-verbatim">
+    Medical Condition: Stress | Duration: 13/10/2025 - 14/11/2025 | Period: 4 weeks 6 days
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">13/10/2025 (same day as disciplinary/dismissal)</span>
+    <br/>
+    <strong>Content:</strong> GP-issued fit note indicating unfitness for work due to stress. Covers 32 calendar days (13/10 to 14/11).
+    <br/>
+    <strong>Legal Significance:</strong> Stress is often manifestation of ADHD in adults under pressure. Fit note proves Claimant was medically unfit on day of disciplinary hearing (13/10).
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Fit Note (eMED3): Extended Period</div>
+  <div class="quote-label">Reference: MED-FITNOTE-002 | Date: ~10/11/2025</div>
+  
+  <div class="quote-label">Document Data</div>
+  <div class="quote-verbatim">
+    Medical Condition: Stress/Mental Health | Duration: 10/11/2025 - 14/12/2025 | Period: 5 weeks (approximately)
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">~10/11/2025</span>
+    <br/>
+    <strong>Content:</strong> Continuation of fit note; indicates ongoing unfitness for work post-dismissal. Shows sustained impact of workplace stress on health.
+    <br/>
+    <strong>Legal Significance:</strong> Extended unfitness demonstrates severity of psychological harm caused by dismissal and preceding harassment.
+  </div>
+</div>
+
+<h2>A4.3 Failure to Make Reasonable Adjustments (s.20-21 EqA)</h2>
+
+<p>
+  <strong>Reasonable Adjustments Required But NOT Offered:</strong>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adjustment</th>
+      <th>Why Required</th>
+      <th>Status</th>
+      <th>Legal Impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Postponement to post-fit-note period</td>
+      <td>Claimant unfit for work (fit note: 13/10-14/11)</td>
+      <td>NOT OFFERED - Employer refused</td>
+      <td>Breach s.20-21 EqA</td>
+    </tr>
+    <tr>
+      <td>Remote attendance / written submission</td>
+      <td>Allow participation without requiring attendance</td>
+      <td>NOT OFFERED - Employer refused</td>
+      <td>Breach s.20-21 EqA</td>
+    </tr>
+    <tr>
+      <td>48+ hours notice (ACAS standard)</td>
+      <td>ADHD individuals need processing time</td>
+      <td>NOT PROVIDED - &lt;24 hours given</td>
+      <td>Breach s.20-21 EqA; ACAS Code §12-14</td>
+    </tr>
+    <tr>
+      <td>Pre-disclosure of evidence</td>
+      <td>Allow preparation; manage anxiety</td>
+      <td>NOT PROVIDED - "at hearing itself"</td>
+      <td>Breach s.20-21 EqA; ACAS Code §2</td>
+    </tr>
+    <tr>
+      <td>Support person / representation</td>
+      <td>Stress-related disability support</td>
+      <td>NOT OFFERED</td>
+      <td>Breach s.20-21 EqA</td>
+    </tr>
+    <tr>
+      <td>Impartial chair</td>
+      <td>Ensure fairness; reduce stress</td>
+      <td>NOT PROVIDED - Lukasz was party to dispute</td>
+      <td>Breach s.20-21 EqA; ACAS Code §6</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A4.4 S.15 EqA - Discrimination Arising from Disability</h2>
+
+<p>
+  <strong>Elements of s.15 Claim:</strong>
+</p>
+
+<ol>
+  <li><strong>Disability:</strong> ADHD (confirmed diagnosis; stress manifestation)</li>
+  <li><strong>Unfavourable treatment:</strong> Dismissal without fair process; no adjustments</li>
+  <li><strong>Because of something arising from disability:</strong> Stress (stress-related unfitness is manifestation of ADHD)</li>
+  <li><strong>Objective justification:</strong> Employer could have postponed; no justification for refusing adjustment</li>
+</ol>
+
+<p>
+  <strong>Application:</strong> Claimant had stress-related unfitness (arising from ADHD disability). Employer dismissed without offering any reasonable adjustment. No objective justification exists for refusing postponement. Therefore, dismissal breaches s.15 EqA.
+</p>
+
+<h2>A4.5 Relief Sought (A4)</h2>
+
+<ol>
+  <li><strong>Declaration:</strong> Claimant has ADHD disability under EqA 2010 s.6.</li>
+  <li><strong>Declaration:</strong> Employer failed to make reasonable adjustments (s.20-21 EqA).</li>
+  <li><strong>Declaration:</strong> Dismissal discriminated based on disability (s.15 EqA).</li>
+  <li><strong>Compensation:</strong> Separate Vento award for injury to feelings (discrimination head).</li>
+  <li><strong>Statutory interest:</strong> 8% per annum from date of dismissal (13/10/2025).</li>
+</ol>
+
+<hr class="page-break"/>
+
+<h1>A5: Harassment / Hostile Environment (EqA 2010 s.26)</h1>
+
+<h2>A5.1 Pattern of Conduct (February - October 2025)</h2>
+
+<p>
+  <strong>Harassment claim based on cumulative conduct pattern:</strong> Nine-month pattern of dehumanising language, aggressive tone, isolation, and post-dismissal intimidation.
+</p>
+
+<h2>A5.2 Evidence (February - October 2025)</h2>
+
+<div class="quote-box">
+  <div class="quote-header">Chat: Vulgarity &amp; Aggressive Tone (02/05/2025 - Time Logging Ban)</div>
+  <div class="quote-label">Reference: E5-HARASS-001 | Date: 05/02/2025 13:04:43</div>
+  
+  <div class="quote-label">Verbatim Text (Original - Polish)</div>
+  <div class="quote-verbatim">
+    "Od dzisiaj nie wpisuj kurwa nic w system."
+  </div>
+
+  <div class="quote-label">Translation (English)</div>
+  <div class="quote-translation">
+    "From today don't f***ing enter anything in the system."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">05/02/2025 13:04:43</span>
+    <br/>
+    <strong>Significance:</strong> First instance of vulgar, aggressive management. Prohibition on time-logging creates evidence gap and non-payment risk.
+    <br/>
+    <strong>Legal Significance:</strong> EqA s.26 (Harassment - violation of dignity via vulgar language).
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Chat: Dehumanisation &amp; Robot Metaphor (05/02/2025)</div>
+  <div class="quote-label">Reference: E5-HARASS-002 | Date: 05/02/2025 13:42:01</div>
+  
+  <div class="quote-label">Verbatim Text (Original - Polish)</div>
+  <div class="quote-verbatim">
+    "Rob najwazniejsze rzeczy i steruj ludzmi jak robotami. I ty tez narazie zamien sie robota. Taki klimat."
+  </div>
+
+  <div class="quote-label">Translation (English)</div>
+  <div class="quote-translation">
+    "Do the most important things and control people like robots. And for now you become a robot too. That's the vibe."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">05/02/2025 13:42:01</span>
+    <br/>
+    <strong>Significance:</strong> Explicit dehumanisation of management philosophy. Claimant included as "robot" - violation of dignity. Treats human employees as objects.
+    <br/>
+    <strong>Legal Significance:</strong> EqA s.26 (Harassment - violation of dignity); Breach of mutual trust and confidence.
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Chat: Micromanagement &amp; Coercive Threats (29/08/2025)</div>
+  <div class="quote-label">Reference: E5-HARASS-003 | Date: 29/08/2025</div>
+  
+  <div class="quote-label">Verbatim Text (Original - Polish)</div>
+  <div class="quote-verbatim">
+    "Proszę również nie robić żadnych zakupów powyżej 20 funtów kartą firmową. W razie nieprzestrzegania, zabiorę na zawsze kartę firmową."
+  </div>
+
+  <div class="quote-label">Translation (English)</div>
+  <div class="quote-translation">
+    "Please also do not make any purchases over £20 on the company card. If not followed, I will take the company card away permanently."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">29/08/2025</span>
+    <br/>
+    <strong>Significance:</strong> Micromanagement combined with coercive threat ("take the card away permanently"). Creates hostile, untrusting environment.
+    <br/>
+    <strong>Legal Significance:</strong> EqA s.26 (Harassment - intimidation/coercion).
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">WhatsApp: Public Isolation Instruction (10/10/2025)</div>
+  <div class="quote-label">Reference: E5-HARASS-004 | Date: 10/10/2025 16:32</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "Private messages to Nikodem will not be accepted... disciplinary action will be taken."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">10/10/2025 16:32</span>
+    <br/>
+    <strong>Significance:</strong> Public message to all staff. Isolates Claimant; intimidates colleagues from contact. Signals impending disciplinary action.
+    <br/>
+    <strong>Legal Significance:</strong> EqA s.26 (Harassment - isolation; violation of dignity); Predetermination.
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">WhatsApp: Public Humiliation - Termination Announcement (13/10/2025 16:11)</div>
+  <div class="quote-label">Reference: E5-HARASS-005 | Date: 13/10/2025 16:11</div>
+  
+  <div class="quote-label">Verbatim Text (Original)</div>
+  <div class="quote-verbatim">
+    "Hi everyone, I'd like to inform you that Nikodem is no longer employed at Platzki Ltd as of 13 October 2025. Please direct any operational or management questions to Lukasz or Przemek moving forward. Thank you for your cooperation and understanding. Best, Lukasz and Przemo."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">13/10/2025 16:11 (2+ hours after dismissal email sent at 14:06)</span>
+    <br/>
+    <strong>Significance:</strong> Public announcement to entire staff group. NO PRIVATE NOTIFICATION to Claimant first. Claimant learns of own termination from group message or after group becomes aware.
+    <br/>
+    <strong>Legal Significance:</strong> EqA s.26 (Harassment - public humiliation); Violation of dignity; Breach of mutual trust and confidence; Breach of ACAS Code §3 (communication standards).
+  </div>
+</div>
+
+<div class="quote-box">
+  <div class="quote-header">Post-Dismissal: Demands &amp; Legal Threats (14-17/10/2025)</div>
+  <div class="quote-label">Reference: E5-HARASS-006 | Date: 14-17/10/2025</div>
+  
+  <div class="quote-label">Verbatim Text (Key Extracts)</div>
+  <div class="quote-verbatim">
+    Email 14/10: "Please provide the login details (usernames and passwords) for all email accounts and supplier platforms... Must be completed by the end of the day tomorrow."
+    <br/>
+    Letter 17/10: "Failure to comply within 48 hours will result in proceedings through IONOS Legal / Nominet DRS / civil and criminal channels."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">14/10/2025 (day after dismissal); 17/10/2025 (formal escalation)</span>
+    <br/>
+    <strong>Significance:</strong> Post-dismissal harassment continues. Demands for sensitive credentials; threats of civil/criminal action. Occurs while Claimant under medical unfitness (fit note active 13/10-14/11).
+    <br/>
+    <strong>Legal Significance:</strong> EqA s.26 (Post-termination Harassment - intimidation/coercion); Abuse of process (criminal threats over administrative dispute); Aggravated damages.
+  </div>
+</div>
+
+<h2>A5.3 S.26 EqA - Harassment Legal Elements</h2>
+
+<p>
+  <strong>s.26(1) EqA:</strong> A person (A) harasses another (B) if:
+</p>
+
+<ol>
+  <li><strong>A engages in unwanted conduct:</strong> Vulgarity, dehumanisation, isolation, humiliation, intimidation - all documented</li>
+  <li><strong>Related to a protected characteristic:</strong> Stress (disability manifestation); or more broadly, human dignity (applies to all)</li>
+  <li><strong>Purpose or effect:</strong> Violating B's dignity OR creating an intimidating/hostile/degrading environment</li>
+  <li><strong>Taking into account B's perception, circumstances, etc:</strong> ADHD individual with known stress sensitivity; employer knew of GP referral</li>
+</ol>
+
+<p>
+  <strong>Application:</strong> All four elements satisfied. Conduct documented; effect was violating dignity and creating hostile environment; Claimant's circumstances (ADHD, stress) known to employer.
+</p>
+
+<h2>A5.4 Relief Sought (A5)</h2>
+
+<ol>
+  <li><strong>Declaration:</strong> Employer harassed Claimant contrary to EqA 2010 s.26.</li>
+  <li><strong>Compensation:</strong> Separate Vento award (harassment - not discrimination-based).</li>
+  <li><strong>Aggravated damages:</strong> For post-dismissal continuation of harassment (threats, intimidation).</li>
+  <li><strong>Statutory interest:</strong> 8% per annum from date of conduct (Feb 2025 onwards).</li>
+</ol>
+
+<hr class="page-break"/>
+
+<h1>A6: Unfair Dismissal &amp; Financial Motive (s.98(4) ERA; s.104 ERA)</h1>
+
+<h2>A6.1 Moving the Goalposts - Operative Standard Shift</h2>
+
+<p>
+  <strong>Critical Pivot: From "COVER" to "AUTHORISATION"</strong>
+</p>
+
+<h3>Stage 1: Operative Standard Before 11/10 = "COVER"</h3>
+
+<div class="quote-box">
+  <div class="quote-header">Claimant's Email (15:29): Confirming Cover Arrangement</div>
+  <div class="quote-label">Reference: E6-COVER-001 | Date: 11/10/2025 15:29</div>
+  
+  <div class="quote-label">Verbatim Text</div>
+  <div class="quote-verbatim">
+    "I started work today at 11:40 and plan to leave at approximately 16:30, not before Anastasia arrives to take over the shift. Before leaving, I did everything I could to organise proper cover. As requested, I have left the company laptop on the premises."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">11/10/2025 15:29</span>
+    <br/>
+    <strong>Analysis:</strong> Claimant explicitly states: (1) Waiting for Anastasia's arrival. (2) "Did everything I could to organise proper cover." (3) Operations continuity maintained (laptop on premises).
+    <br/>
+    <strong>Operative Standard:</strong> Performance of duty to provide "cover" (shift continuity). This standard is MET.
+  </div>
+</div>
+
+<h3>Stage 2: Pivot Moment - New Rule "AUTHORISATION" Introduced (15:38)</h3>
+
+<div class="quote-box">
+  <div class="quote-header">Employer's Response: Introduction of "Authorisation" Requirement</div>
+  <div class="quote-label">Reference: E6-PIVOT-001 | Date: 11/10/2025 15:38</div>
+  
+  <div class="quote-label">Verbatim Text</div>
+  <div class="quote-verbatim">
+    "this was not authorised in advance. I organised the shift cover myself to ensure continuity of operations - not you."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">11/10/2025 15:38 (9 minutes after Claimant's email)</span>
+    <br/>
+    <strong>Analysis:</strong> FIRST use of word "authorised" in response. Novel rule introduced. Operative standard shifts from "cover" (which was arranged) to "authorisation" (which was never a stated requirement).
+    <br/>
+    <strong>Critical Issue:</strong> Employment contract (CP-01) reviewed - CONTAINS NO "AUTHORISATION" REQUIREMENT. No policy document cited requiring advance approval.
+    <br/>
+    <strong>Moving Goalposts:</strong> Employer retroactively applies novel standard to conduct already evaluated under different standard.
+  </div>
+</div>
+
+<h2>A6.2 Misstatement of Law (ERA s.57A)</h2>
+
+<div class="quote-box">
+  <div class="quote-header">Employer's False Legal Assertion</div>
+  <div class="quote-label">Reference: E6-LAW-FALSE | Date: 11/10/2025 16:05-16:08</div>
+  
+  <div class="quote-label">Verbatim Text</div>
+  <div class="quote-verbatim">
+    "Emergencies involving friends are not covered under UK employment law for time off for dependants. Please bring the company card back to the restaurant and leave it in a secure place today."
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">11/10/2025 16:05-16:08</span>
+    <br/>
+    <strong>Legal Fact - ERA 1996 s.57A(1):</strong> Employee has right to reasonable time off for dependant if:
+    <br/>
+    "(a) a spouse, child or parent of the employee, or
+    <br/>
+    (b) a person who reasonably relies on the employee for care."
+    <br/>
+    <strong>Application to Marek Piszczek:</strong>
+    <ul style="margin: 6pt 0pt; padding-left: 18pt;">
+      <li>No family in UK (thus reasonably relies on Claimant)</li>
+      <li>Years of close relationship established</li>
+      <li>Medical emergency (hospital transport) is urgent care situation</li>
+      <li>QUALIFIES under s.57A(1)(b) "person who reasonably relies on employee for care"</li>
+    </ul>
+    <br/>
+    <strong>Employer's Assertion:</strong> FALSE - Contradicted by statute
+    <br/>
+    <strong>Legal Significance:</strong> Misstatement of law is evidence of bad faith and pretextual basis for dismissal.
+  </div>
+</div>
+
+<h2>A6.3 Financial Motive for Dismissal</h2>
+
+<div class="quote-box">
+  <div class="quote-header">Employer's Cash-Flow Crisis Disclosure</div>
+  <div class="quote-label">Reference: E6-MOTIVE-001 | Date: 03/10/2025 12:58</div>
+  
+  <div class="quote-label">Verbatim Text (Original - Polish)</div>
+  <div class="quote-verbatim">
+    "Po prostu nie mam pieniędzy na połowę wypłat i wasze składki, rozumiesz?"
+  </div>
+
+  <div class="quote-label">Translation (English)</div>
+  <div class="quote-translation">
+    "I simply don't have money for half the wages and your contributions, do you understand?"
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Date/Time:</strong> <span class="timestamp">03/10/2025 12:58 (10 days BEFORE dismissal on 13/10)</span>
+    <br/>
+    <strong>Context:</strong> Employer explicitly discloses financial crisis. Cannot fund "half the wages" - implies significant staff reduction needed.
+    <br/>
+    <strong>Claimant's Salary:</strong> GBP 2,800/month (highest senior staff member identified)
+    <br/>
+    <strong>Timeline:</strong> Financial crisis disclosed 10 days before dismissal of senior manager
+    <br/>
+    <strong>Inference:</strong> Dismissal appears motivated by cost-cutting (payroll reduction), not the stated reason.
+    <br/>
+    <strong>Legal Significance:</strong> Evidence of financial motive undermines credibility of disciplinary reason; suggests dismissal unfair under s.98(4) ERA (reason not genuine or pretext).
+  </div>
+</div>
+
+<h2>A6.4 S.98(4) ERA - Three-Part Fairness Test</h2>
+
+<p>
+  <strong>Test Under ERA 1996 s.98(4):</strong> Dismissal is fair only if:
+</p>
+
+<ol>
+  <li><strong>Fair reason shown:</strong> One of the statutory reasons (capability, conduct, redundancy, statutory illegality, SOSR, etc.)</li>
+  <li><strong>Procedurally fair:</strong> Following ACAS Code and natural justice</li>
+  <li><strong>Reasonable in circumstances:</strong> Overall proportionate response</li>
+</ol>
+
+<p>
+  <strong>Application to This Case:</strong>
+</p>
+
+<h3>Reason Given: "Leaving without authorisation" + "misrepresentation" + "failure to return card"</h3>
+
+<p>
+  <strong>Issue 1: Is the reason genuine/true?</strong>
+</p>
+
+<ul>
+  <li><strong>"Leaving without authorisation":</strong> Novel requirement introduced retroactively. Employment contract silent on "authorisation" requirement. Operative standard was "cover" (which was arranged).</li>
+  <li><strong>"Misrepresentation":</strong> Claimant stated he "organised proper cover" - this is TRUE. Anastasia confirmed attendance. Employer's claim he "organised cover himself" is contradicted by evidence.</li>
+  <li><strong>"Failure to return card":</strong> Card kept during emergency (Claimant left at 16:30, returned same day). No substantive issue.</li>
+  <li><strong>Underlying law misstatement:</strong> Employer falsely stated s.57A does not cover friends. This is incorrect law.</li>
+</ul>
+
+<p>
+  <strong>Conclusion on Reason: NOT genuine. Reason is pretext.</strong>
+</p>
+
+<h3>Issue 2: Procedural Fairness?</h3>
+
+<p>
+  Six ACAS Code breaches documented (see A3 section above). Process was fundamentally unfair.
+</p>
+
+<p>
+  <strong>Conclusion on Procedure: Massively unfair.</strong>
+</p>
+
+<h3>Issue 3: Reasonable in circumstances?</h3>
+
+<p>
+  Dismissal of 9-month employee for arranging shift cover during medical emergency. No alternatives considered (warning, suspension, investigation). Financial motive evident (cash-flow crisis disclosed days before).
+</p>
+
+<p>
+  <strong>Conclusion on Reasonableness: Unreasonable.</strong>
+</p>
+
+<h2>A6.5 S.104 ERA - Automatic Unfairness (Alternative Basis)</h2>
+
+<p>
+  <strong>ERA 1996 s.104:</strong> An employee is automatically unfairly dismissed if the reason (or principal reason) is that the employee asserted a statutory right (including ERA s.57A right to time off for dependants).
+</p>
+
+<p>
+  <strong>Application:</strong> If Claimant's dismissal reason included (even partially) assertion of s.57A right (time off for medical dependant care), dismissal is automatically unfair under s.104. No procedural fairness defence available; no "contributory conduct" reduction applies.
+</p>
+
+<p>
+  <strong>Evidence of s.104 Trigger:</strong> Employer's email (16:05) explicitly references s.57A ("Emergencies involving friends are not covered under UK employment law for time off for dependants"). By mischaracterizing s.57A, employer signals that assertion of s.57A right was a factor in dismissal decision.
+</p>
+
+<h2>A6.6 Relief Sought (A6)</h2>
+
+<ol>
+  <li><strong>Declaration:</strong> Dismissal was unfair under ERA 1996 s.98(4) (reason not genuine, procedure unfair, unreasonable in circumstances).</li>
+  <li><strong>Declaration (Alternative):</strong> Dismissal was automatically unfair under ERA 1996 s.104 (assertion of s.57A statutory right).</li>
+  <li><strong>Compensation:</strong> Compensatory award for unfair dismissal (see A7-A10).</li>
+  <li><strong>No contributory conduct deduction:</strong> Under s.104 automatic unfairness, such reduction does not apply.</li>
+  <li><strong>ACAS uplift:</strong> 25% uplift under s.207A TULRCA (six core ACAS Code breaches; all consequential).</li>
+</ol>
+
+<hr class="page-break"/>
+
+<h1>A7: Loss of Future Earnings (12-18 Month Scenarios)</h1>
+
+<h2>A7.1 Employment End &amp; Documented Unfitness</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Period</th>
+      <th>Status</th>
+      <th>Evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 Jan - 13 Oct 2025</td>
+      <td>Employed; working</td>
+      <td>Contract; payslips</td>
+    </tr>
+    <tr>
+      <td>13-14 Oct 2025</td>
+      <td>Dismissal decision</td>
+      <td>Dismissal letter 14:06 on 13/10</td>
+    </tr>
+    <tr>
+      <td>13/10 - 14/11 2025</td>
+      <td>Unfit for work (stress)</td>
+      <td>Fit note: 13/10-14/11 (4 weeks 6 days)</td>
+    </tr>
+    <tr>
+      <td>10/11 - 14/12 2025</td>
+      <td>Continued unfitness</td>
+      <td>Extended fit note: 10/11-14/12 (~5 weeks)</td>
+    </tr>
+    <tr>
+      <td>15/12 2025 onwards</td>
+      <td>Potential for job-seeking</td>
+      <td>Fit note expires 14/12; recovery timeline uncertain</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A7.2 Verified Monthly Earnings (Gross &amp; Net)</h2>
+
+<div class="quote-box">
+  <div class="quote-header">Payslip Analysis: Monthly Salary Calculation</div>
+  <div class="quote-label">Reference: E7-PAY-CALC | Date: 31/10/2025</div>
+  
+  <div class="quote-label">Document Data</div>
+  <div class="quote-verbatim">
+    Period: 1-13 Oct 2025 (13 days) | Salary: GBP 1,190.00 | Tronc: GBP 237.00
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Calculation:</strong>
+    <br/>
+    Salary: GBP 1,190 × (31/13) = GBP 2,838/month
+    <br/>
+    Tronc: GBP 237 × (31/13) = GBP 565/month
+    <br/>
+    <strong>Total Monthly Gross: GBP 3,403</strong>
+    <br/>
+    <strong>Tax &amp; NI (approx.): GBP 870-920</strong>
+    <br/>
+    <strong>Monthly Net (approx.): GBP 2,483-2,533 (conservative: GBP 2,800 contracted)</strong>
+  </div>
+</div>
+
+<h2>A7.3 Loss Calculation: 12-Month Scenario</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Calculation</th>
+      <th>Amount (GBP)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monthly salary (gross)</td>
+      <td>GBP 2,838/month</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Monthly tronc (gross)</td>
+      <td>GBP 565/month</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td style="background: #ffffff;"><strong>Total Monthly Gross</strong></td>
+      <td style="background: #ffffff;"><strong>-</strong></td>
+      <td style="background: #ffffff;"><strong>GBP 3,403</strong></td>
+    </tr>
+    <tr>
+      <td>12 months × GBP 3,403</td>
+      <td>Gross for full year</td>
+      <td>GBP 40,836</td>
+    </tr>
+    <tr>
+      <td>Tax conversion (76% retention)</td>
+      <td>Estimated net after tax/NI</td>
+      <td>GBP 31,035</td>
+    </tr>
+    <tr>
+      <td>Less: Mitigation (benefits, interim work)</td>
+      <td>Conservative estimate</td>
+      <td>(GBP 5,000)</td>
+    </tr>
+    <tr>
+      <td style="background: #ffffff;"><strong>12-Month Loss (Net)</strong></td>
+      <td style="background: #ffffff;"><strong>-</strong></td>
+      <td style="background: #ffffff;"><strong>GBP 26,035</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A7.4 Loss Calculation: 18-Month Scenario</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Calculation</th>
+      <th>Amount (GBP)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>18 months × GBP 3,403</td>
+      <td>Gross for 18 months</td>
+      <td>GBP 61,254</td>
+    </tr>
+    <tr>
+      <td>Tax conversion (76% retention)</td>
+      <td>Estimated net after tax/NI</td>
+      <td>GBP 46,553</td>
+    </tr>
+    <tr>
+      <td>Less: Mitigation</td>
+      <td>Conservative estimate</td>
+      <td>(GBP 5,000)</td>
+    </tr>
+    <tr>
+      <td style="background: #ffffff;"><strong>18-Month Loss (Net)</strong></td>
+      <td style="background: #ffffff;"><strong>-</strong></td>
+      <td style="background: #ffffff;"><strong>GBP 41,553</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A7.5 Justification for 12-18 Month Award Period</h2>
+
+<ol>
+  <li><strong>Automatic unfairness (s.104 ERA):</strong> Under s.104, no "contributory conduct" reduction applies. Full period justified.</li>
+  <li><strong>Disability discrimination (EqA):</strong> ADHD individual requires longer recovery from workplace trauma; job-seeking delayed due to health impact.</li>
+  <li><strong>Reputational damage:</strong> Dismissal for "misconduct" (unauthorised absence) circulates in industry; affects hirability.</li>
+  <li><strong>Age &amp; seniority:</strong> 39-year-old senior manager (GM) has narrower market for similar roles than junior staff.</li>
+  <li><strong>Medical fitness:</strong> Fit note extends to 14 Dec 2025; active job-seeking unlikely before January 2026. Realistic re-employment period ~mid-April 2026.</li>
+  <li><strong>Cumulative injustice:</strong> Harassment (9 months), unfair dismissal (multiple breaches), disability discrimination, post-dismissal intimidation - all increase appropriate award period.</li>
+</ol>
+
+<hr class="page-break"/>
+
+<h1>A8: Injury to Feelings &amp; Mental Health Impact</h1>
+
+<h2>A8.1 Vento Bands (2025 Reference Values)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Band</th>
+      <th>Range (GBP)</th>
+      <th>Characteristics</th>
+      <th>Application</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Lower</strong></td>
+      <td>GBP 1,200 - 11,700</td>
+      <td>Less serious; limited impact; isolated incident</td>
+      <td>Not applicable - conduct cumulative, sustained</td>
+    </tr>
+    <tr>
+      <td><strong>Middle</strong></td>
+      <td>GBP 11,700 - 35,200</td>
+      <td>Serious; significant injury; moderate duration; health impact emerging</td>
+      <td>Potential lower bound; multiple breaches justify upper half</td>
+    </tr>
+    <tr>
+      <td><strong>Upper</strong></td>
+      <td>GBP 35,200 - 58,700</td>
+      <td>Very serious; severe injury; deliberate conduct; long-term harm</td>
+      <td><strong>APPLICABLE</strong> - Deliberate breaches; 9-month harassment pattern; documented stress/medical harm</td>
+    </tr>
+    <tr>
+      <td><strong>Exceptional</strong></td>
+      <td>&gt;GBP 58,700</td>
+      <td>Extreme circumstances; career-ending; severe breakdown</td>
+      <td>Not necessary here, but not ruled out if tribunal finds exceptional circumstances</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A8.2 Aggravating Circumstances</h2>
+
+<ol>
+  <li><strong>Deliberate procedural breaches:</strong> Not accidental; pattern of ACAS Code violations (six separate breaches)</li>
+  <li><strong>Predetermination manifest:</strong> "Trust already gone" messages (10/10) sent BEFORE formal hearing</li>
+  <li><strong>Public humiliation:</strong> WhatsApp announcement to all staff; no private notification first</li>
+  <li><strong>Dehumanizing language:</strong> "Control people like robots" - violation of dignity</li>
+  <li><strong>Post-dismissal harassment:</strong> Legal threats (17/10); demands for credentials; continued intimidation</li>
+  <li><strong>ADHD-specific vulnerability:</strong> Medical file shows ADHD; employer aware of GP referral (October 2025)</li>
+  <li><strong>Financial bad faith:</strong> Cost-cutting motive (cash-flow crisis 10 days before dismissal) disguised by false allegations</li>
+  <li><strong>Compounded discrimination:</strong> Multiple heads (unfair dismissal + disability discrimination + harassment) create layered injury</li>
+  <li><strong>Fit note evidence:</strong> Stress-related unfitness for 9 weeks post-dismissal; extended period shows severity</li>
+</ol>
+
+<h2>A8.3 Medical Evidence of Harm</h2>
+
+<p>
+  <strong>Fit Note (13/10 - 14/11):</strong> GP-certified stress-related unfitness for work.
   <br/>
+  <strong>Extended Fit Note (10/11 - 14/12):</strong> Continued unfitness; demonstrates sustained psychological impact.
   <br/>
-  I believe that the facts stated in this document are true. I understand that proceedings for contempt of court may be brought against anyone who makes, or causes to be made, a false statement in a document verified by a statement of truth without an honest belief in its truth.
+  <strong>Total documented unfitness:</strong> ~9 weeks (63 calendar days).
+</p>
+
+<h2>A8.4 Proposed Award</h2>
+
+<p>
+  <strong>Recommended Vento Band: Upper-Middle to Upper (GBP 25,000 - GBP 40,000)</strong>
+</p>
+
+<p>
+  Justification:
+</p>
+
+<ul>
+  <li><strong>GBP 25,000 (lower within Upper band):</strong> Conservative scenario; serious injury established; moderate deliberation</li>
+  <li><strong>GBP 32,000-35,000 (mid-Upper band):</strong> Mid-range scenario; deliberate breaches; predetermination; public humiliation</li>
+  <li><strong>GBP 40,000 (upper within Upper band):</strong> Full scenario; combined harassment + discrimination; documented stress; post-dismissal continuation</li>
+</ul>
+
+<h2>A8.5 Aggravated Damages (Separate Award)</h2>
+
+<p>
+  <strong>Application: Aggravated damages are awarded when employer's conduct in defending claim or post-dismissal conduct is itself unreasonable/oppressive.</strong>
+</p>
+
+<p>
+  <strong>Evidence of Aggravating Post-Dismissal Conduct:</strong>
+</p>
+
+<ul>
+  <li>Legal threats (17/10) threatening civil/criminal action over administrative access</li>
+  <li>Equipment deduction threats (14-17/10) without contractual basis</li>
+  <li>Demands for sensitive credentials while Claimant unfit for work (fit note active)</li>
+  <li>Appeal deadline miscalculation; frustration of appeal right</li>
+</ul>
+
+<p>
+  <strong>Recommended Aggravated Damages: GBP 3,000 - GBP 8,000</strong>
+</p>
+
+<hr class="page-break"/>
+
+<h1>A9: ACAS Code Uplift (s.207A TULRCA 1992)</h1>
+
+<h2>A9.1 Legal Framework</h2>
+
+<p>
+  <strong>s.207A TULRCA 1992:</strong> If a tribunal finds that a party has unreasonably failed to comply with the ACAS Code of Practice on Disciplinary and Grievance Procedures, the tribunal may increase the award by up to 25%.
+</p>
+
+<h2>A9.2 Application Criteria</h2>
+
+<ol>
+  <li><strong>Unreasonable failure to comply:</strong> Not technical breach; must be unreasonable</li>
+  <li><strong>Consequential to complaint being well-founded:</strong> Breach must have contributed to dismissal being unfair (or discrimination occurring)</li>
+  <li><strong>Proportionality:</strong> Uplift (0-25%) reflects severity of breach</li>
+</ol>
+
+<h2>A9.3 Six Documented ACAS Code Breaches</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Breach #</th>
+      <th>ACAS §</th>
+      <th>What Employer Did</th>
+      <th>Unreasonable?</th>
+      <th>Consequential?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>§12-14</td>
+      <td>&lt;24 hours notice (Sunday to Monday)</td>
+      <td>YES - Manifestly inadequate</td>
+      <td>YES - Claimant couldn't prepare</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>§2</td>
+      <td>No pre-disclosure of evidence</td>
+      <td>YES - Fundamental right denied</td>
+      <td>YES - Can't address allegations</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>§6</td>
+      <td>Biased chair (Lukasz involved; Przemek co-owner)</td>
+      <td>YES - No separation of roles</td>
+      <td>YES - Can't believe in fairness</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>§10-15</td>
+      <td>Fit note disregarded; no adjustment</td>
+      <td>YES - Duty to consider health ignored</td>
+      <td>YES - Discriminatory; unfair</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>§6-9</td>
+      <td>66-minute hearing for 3+ allegations</td>
+      <td>YES - Grossly inadequate</td>
+      <td>YES - Predetermination evident</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>§4</td>
+      <td>Appeal deadline miscalculated</td>
+      <td>YES - Frustrates appeal right</td>
+      <td>YES - Prevents genuine appeal process</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A9.4 Calculation of Uplift (25%)</h2>
+
+<p>
+  <strong>Rationale for 25% (Maximum):</strong>
+</p>
+
+<ul>
+  <li><strong>Six distinct ACAS Code breaches:</strong> Not one or two peripheral breaches; six core, separate violations</li>
+  <li><strong>All unreasonable:</strong> Each breach, individually, is unreasonable; cumulatively, egregious</li>
+  <li><strong>All consequential:</strong> Each breach prevented fair hearing and contributed to unfairness finding</li>
+  <li><strong>Pattern of deliberateness:</strong> Not accidental slips; systematic violations (rushed hearing, no disclosure, biased chair, health ignored)</li>
+  <li><strong>Bad faith indicators:</strong> Predetermination messages; financial motive; misrepresentation of law</li>
+  <li><strong>No genuine attempt at compliance:</strong> When objections raised (12/10 by Claimant), employer dismissed concerns and proceeded</li>
+</ul>
+
+<p>
+  <strong>Under s.207A guidance, 25% uplift is justified because:</strong>
+</p>
+
+<ol>
+  <li>Multiple unreasonable failures (not single technical breach)</li>
+  <li>Failures were causative of unfairness (all contributed to dismissal being unfair)</li>
+  <li>Employer's conduct warrants maximum penalty within statutory range</li>
+</ol>
+
+<h2>A9.5 Uplift Calculation (Example: 12-Month Loss Scenario)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Amount (GBP)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Compensatory award (unfair dismissal, net)</td>
+      <td>26,035</td>
+    </tr>
+    <tr>
+      <td>ACAS uplift 25%</td>
+      <td>6,509</td>
+    </tr>
+    <tr>
+      <td style="background: #ffffff;"><strong>Subtotal (with uplift)</strong></td>
+      <td style="background: #ffffff;"><strong>32,544</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  <strong>Note:</strong> Uplift applies to compensatory award only (unfair dismissal). It does NOT apply to discrimination awards (EqA) or harassment awards (s.26 EqA), which are separate heads.
+</p>
+
+<hr class="page-break"/>
+
+<h1>A10: Global Schedule of Loss (Consolidated Award Scenarios)</h1>
+
+<h2>A10.1 Conservative Scenario (12-Month Loss; Lower EqA Awards)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Head of Claim</th>
+      <th>Component</th>
+      <th>Amount (GBP)</th>
+      <th>Basis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Unfair Dismissal (ERA s.98(4))</strong></td>
+      <td>Compensatory award (net, 12m loss)</td>
+      <td>26,035</td>
+      <td>12 months loss; mitigation GBP 5,000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ACAS uplift (25% of above)</td>
+      <td>6,509</td>
+      <td>Six ACAS Code breaches; all consequential</td>
+    </tr>
+    <tr>
+      <td><strong>Disability Discrimination (EqA s.15, s.20-21)</strong></td>
+      <td>Compensation for failure to adjust</td>
+      <td>Subsumed in Vento (see below)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Harassment (EqA s.26)</strong></td>
+      <td>Injury to feelings (Vento lower band)</td>
+      <td>25,000</td>
+      <td>Cumulative harassment; public humiliation; 9-month pattern</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Aggravated damages (post-dismissal harassment)</td>
+      <td>3,000</td>
+      <td>Legal threats; equipment demands; appeal frustration</td>
+    </tr>
+    <tr>
+      <td><strong>Additional Hours (ERA s.13; Contract)</strong></td>
+      <td>Undocumented work payment</td>
+      <td>5,144</td>
+      <td>Conservative 40 hrs/month; GBP 17.09/hr; 9.4 months</td>
+    </tr>
+    <tr>
+      <td><strong>Breach of Contract</strong></td>
+      <td>Breach of implied term (mutual trust)</td>
+      <td>2,000</td>
+      <td>Dehumanizing language; isolation; coercion</td>
+    </tr>
+    <tr>
+      <td><strong>Statutory Interest (8% p.a.)</strong></td>
+      <td>Interest on underpayment (13/10/2025 to date of award)</td>
+      <td>2,000</td>
+      <td>Approximately 13-14 months accrual</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="background: #ffffff; font-weight: bold;">TOTAL (CONSERVATIVE SCENARIO)</td>
+      <td style="background: #ffffff; font-weight: bold;">76,688</td>
+      <td style="background: #ffffff;">-</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A10.2 Mid-Range Scenario (12-Month Loss; Mid-Vento Award)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Head of Claim</th>
+      <th>Component</th>
+      <th>Amount (GBP)</th>
+      <th>Basis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Unfair Dismissal (ERA s.98(4))</strong></td>
+      <td>Compensatory award (net, 12m loss)</td>
+      <td>26,035</td>
+      <td>12 months loss; mitigation GBP 5,000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ACAS uplift (25% of above)</td>
+      <td>6,509</td>
+      <td>Six ACAS Code breaches; all consequential</td>
+    </tr>
+    <tr>
+      <td><strong>Harassment (EqA s.26)</strong></td>
+      <td>Injury to feelings (Vento mid-band)</td>
+      <td>32,000</td>
+      <td>Deliberate breaches; predetermination; public humiliation</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Aggravated damages</td>
+      <td>5,000</td>
+      <td>Post-dismissal threats; harassment continuation</td>
+    </tr>
+    <tr>
+      <td><strong>Additional Hours</strong></td>
+      <td>Undocumented work (mid-range)</td>
+      <td>7,600</td>
+      <td>55 hrs/month average; GBP 17.09/hr; 9.4 months</td>
+    </tr>
+    <tr>
+      <td><strong>Breach of Contract</strong></td>
+      <td>Implied term breach</td>
+      <td>3,000</td>
+      <td>Cumulative violations of trust and confidence</td>
+    </tr>
+    <tr>
+      <td><strong>Statutory Interest</strong></td>
+      <td>8% p.a. from 13/10/2025</td>
+      <td>2,500</td>
+      <td>Approximately 13-14 months accrual</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="background: #ffffff; font-weight: bold;">TOTAL (MID-RANGE SCENARIO)</td>
+      <td style="background: #ffffff; font-weight: bold;">98,644</td>
+      <td style="background: #ffffff;">-</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A10.3 Full Damages Scenario (18-Month Loss; Upper Vento; Full Uplift)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Head of Claim</th>
+      <th>Component</th>
+      <th>Amount (GBP)</th>
+      <th>Basis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Unfair Dismissal (ERA s.98(4))</strong></td>
+      <td>Compensatory award (net, 18m loss)</td>
+      <td>41,553</td>
+      <td>18 months loss; s.104 automatic unfairness (no mitigation reduction applies)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ACAS uplift (25% of above)</td>
+      <td>10,388</td>
+      <td>Six ACAS Code breaches; cumulative pattern; bad faith</td>
+    </tr>
+    <tr>
+      <td><strong>Harassment (EqA s.26)</strong></td>
+      <td>Injury to feelings (Vento upper-band)</td>
+      <td>40,000</td>
+      <td>Very serious; deliberate; predetermination; 9-month pattern; documented stress</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Aggravated damages (post-dismissal)</td>
+      <td>8,000</td>
+      <td>Legal threats; intimidation; vulnerability (unfit work); harassment continuation</td>
+    </tr>
+    <tr>
+      <td><strong>Additional Hours</strong></td>
+      <td>Undocumented work (full range)</td>
+      <td>8,994</td>
+      <td>70 hrs/month; GBP 17.09/hr; 9.4 months</td>
+    </tr>
+    <tr>
+      <td><strong>Breach of Contract</strong></td>
+      <td>Implied term breach (full range)</td>
+      <td>5,000</td>
+      <td>Extended pattern; systematic violations; dehumanization; coercion</td>
+    </tr>
+    <tr>
+      <td><strong>Statutory Interest</strong></td>
+      <td>8% p.a. from 13/10/2025 to date of award (~20 months)</td>
+      <td>4,000</td>
+      <td>Approximately 20 months accrual</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="background: #ffffff; font-weight: bold;">TOTAL (FULL DAMAGES SCENARIO)</td>
+      <td style="background: #ffffff; font-weight: bold;">137,935</td>
+      <td style="background: #ffffff;">-</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A10.4 Summary of Award Range</h2>
+
+<p>
+  <strong>Total potential award range: GBP 76,688 - GBP 137,935</strong>
+</p>
+
+<p>
+  <strong>Most likely award (mid-range with 12-18m adjustment): GBP 98,644 - GBP 125,000</strong>
+</p>
+
+<hr class="page-break"/>
+
+<h1>A11: Breach of Contract (Express &amp; Implied Terms; s.57A ERA)</h1>
+
+<h2>A11.1 Express Term Breach - "Authorisation" Requirement</h2>
+
+<h3>Employment Contract (CP-01) Review</h3>
+
+<div class="quote-box">
+  <div class="quote-header">Contract Provision: Time Off &amp; Leave</div>
+  <div class="quote-label">Reference: CP-01-TIMEOFF | Section: 4 (Leave &amp; Time Off)</div>
+  
+  <div class="quote-label">Finding</div>
+  <div class="quote-verbatim">
+    Employment Contract reviewed: DOES NOT CONTAIN any clause requiring "advance authorisation" for time off. DOES NOT CONTAIN any clause requiring "manager approval" for departures. DOES NOT REFERENCE "written permission" requirement.
+  </div>
+
+  <div class="quote-metadata">
+    <strong>Operative Standard in Contract:</strong> Cover/continuity of service (implied). No "authorisation" requirement specified.
+    <br/>
+    <strong>Breach:</strong> Employer introduces "authorisation" requirement (11/10/2025, 15:38) retroactively, without contractual basis.
+    <br/>
+    <strong>Legal Significance:</strong> Breach of contract (modification of operative standard without agreement); Bad faith (moving goalposts).
+  </div>
+</div>
+
+<h2>A11.2 Implied Term Breach - Mutual Trust &amp; Confidence</h2>
+
+<p>
+  <strong>Implied term in all employment contracts:</strong> Mutual trust and confidence (Robertson v British Gas plc [1983] ICR 351).
+</p>
+
+<p>
+  <strong>Standard:</strong> Employer must not, without reasonable and proper cause, conduct itself in a manner calculated and likely to destroy or seriously damage the relationship of confidence and trust between employer and employee.
+</p>
+
+<h3>Evidence of Breach (February - October 2025)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Conduct</th>
+      <th>Date</th>
+      <th>Breach Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vulgar management ("don't f***ing enter")</td>
+      <td>05/02/2025</td>
+      <td>Disrespect; dehumanization</td>
+    </tr>
+    <tr>
+      <td>"Control people like robots; you become robot too"</td>
+      <td>05/02/2025</td>
+      <td>Dehumanization; violation of dignity</td>
+    </tr>
+    <tr>
+      <td>Micromanagement with coercive threat (card removal)</td>
+      <td>29/08/2025</td>
+      <td>Coercion; intimidation; distrust</td>
+    </tr>
+    <tr>
+      <td>Predetermination ("trust already gone")</td>
+      <td>10/10/2025</td>
+      <td>Prejudgment; destruction of trust</td>
+    </tr>
+    <tr>
+      <td>Public isolation ("don't message Nikodem")</td>
+      <td>10/10/2025</td>
+      <td>Isolation; humiliation; distrust</td>
+    </tr>
+    <tr>
+      <td>Rushes through unfair disciplinary (66 min)</td>
+      <td>13/10/2025</td>
+      <td>Disrespect; lack of fairness</td>
+    </tr>
+    <tr>
+      <td>Public humiliation (WhatsApp announcement)</td>
+      <td>13/10/2025</td>
+      <td>Violation of dignity; disrespect</td>
+    </tr>
+    <tr>
+      <td>Post-dismissal legal threats; intimidation</td>
+      <td>14-17/10/2025</td>
+      <td>Coercion; harassment; bad faith</td>
+    </tr>
+    <tr>
+      <td>Misstatement of law (s.57A)</td>
+      <td>11/10/2025</td>
+      <td>Bad faith; dishonesty</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  <strong>Cumulative Effect:</strong> The pattern of conduct (vulgarity, dehumanization, micromanagement, coercion, predetermination, humiliation, intimidation) is calculated and likely to destroy the trust and confidence between employer and employee.
+</p>
+
+<p>
+  <strong>Conclusion:</strong> Fundamental breach of implied term of mutual trust and confidence.
+</p>
+
+<h2>A11.3 S.57A ERA - Time Off for Dependants (Protected Right)</h2>
+
+<p>
+  <strong>ERA 1996 s.57A(1):</strong> An employee has the right to take a reasonable amount of time off work during normal working hours in order to deal with:
+</p>
+
+<ol>
+  <li>The unexpected or sudden illness of a person who depends on the employee for care</li>
+  <li>The unexpected breakdown of arrangements for the care of a person who depends on the employee</li>
+  <li>The unexpected occurrence of an incident involving a child of the employee, where the child is attending school or other educational establishment</li>
+  <li>To provide assistance on an occasion when a person who depends on the employee for care is injured or assaulted</li>
+  <li>In connection with the death of a person who depends on the employee for care</li>
+  <li>To deal with matters arising from the employee's relationship with a spouse, civil partner or person of marrital status</li>
+</ol>
+
+<p>
+  <strong>"Dependent" defined (s.57A(2)):</strong>
+</p>
+
+<blockquote style="border-left: 2pt solid #0b3f5c; padding: 8pt 10pt; margin: 8pt 0pt; font-size: 10pt;">
+"(a) a spouse, child or parent of the employee, or (b) a person who reasonably relies on the employee for care"
+</blockquote>
+
+<h3>Application: Marek Piszczek as "Dependent"</h3>
+
+<p>
+  <strong>Facts:</strong>
+</p>
+
+<ul>
+  <li><strong>Marek Piszczek:</strong> Close friend; no family in UK; medical emergency (hospital transport required)</li>
+  <li><strong>Reasonable reliance:</strong> Called Claimant during emergency; Claimant organized transport; years of established relationship</li>
+  <li><strong>Sudden medical event:</strong> Hospital admission = "unexpected or sudden illness" (s.57A(1)(a) context)</li>
+  <li><strong>Incident response:</strong> Transport during medical crisis = "to provide assistance on an occasion when person depends on employee for care" (s.57A(1)(d))</li>
+</ul>
+
+<p>
+  <strong>Conclusion:</strong> Marek Piszczek qualifies as "person who reasonably relies on the employee for care" under s.57A(2)(b). Claimant's time off is PROTECTED under statute.
+</p>
+
+<h2>A11.4 S.104 ERA - Automatic Unfairness (If Dismissal Related to s.57A)</h2>
+
+<p>
+  <strong>ERA 1996 s.104:</strong> An employee shall be regarded as unfairly dismissed if the reason (or, if there is more than one, the principal reason) for the dismissal is that the employee asserted a statutory right.
+</p>
+
+<p>
+  <strong>Statutory right includes:</strong> Right to reasonable time off for dependant (s.57A).
+</p>
+
+<p>
+  <strong>Application:</strong> If Claimant's dismissal reason included (even partially) assertion of s.57A right, dismissal is automatically unfair under s.104. No procedural fairness defence; no "contributory conduct" reduction applies.
+</p>
+
+<p>
+  <strong>Evidence of s.104 Trigger:</strong> Employer's email (16:05, 11/10) explicitly references dependant law: "Emergencies involving friends are not covered under UK employment law for time off for dependants." By asserting false law, employer signals that s.57A right was a factor in dismissal.
+</p>
+
+<h2>A11.5 Relief Sought (A11)</h2>
+
+<ol>
+  <li><strong>Declaration:</strong> Employment contract did NOT contain "authorisation" requirement; employer breached express term by retroactively applying novel standard.</li>
+  <li><strong>Declaration:</strong> Employer breached implied term of mutual trust and confidence through pattern of vulgarity, dehumanization, coercion, and predetermination.</li>
+  <li><strong>Declaration:</strong> Claimant's time off on 11/10 was protected under ERA s.57A (time off for dependant).</li>
+  <li><strong>Declaration (Alternative):</strong> Dismissal was automatically unfair under ERA s.104 (assertion of s.57A statutory right).</li>
+  <li><strong>Compensation:</strong> Damages for breach of contract (implied term breach): GBP 2,000 - GBP 5,000.</li>
+  <li><strong>Statutory interest:</strong> 8% per annum from date of breach (13/10/2025 dismissal).</li>
+</ol>
+
+<hr class="page-break"/>
+
+<h1>A12: Summary &amp; Relief Sought (Global Claims Statement)</h1>
+
+<h2>A12.1 Seven Heads of Claim (Consolidated Summary)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Head #</th>
+      <th>Legal Basis</th>
+      <th>Key Facts</th>
+      <th>Relief Sought</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td>Unfair Dismissal (ERA s.98(4); s.104)</td>
+      <td>False reason ("authorisation"); 6 ACAS breaches; predetermination; financial motive</td>
+      <td>Compensatory award GBP 26,000-41,500 (net, 12-18m); ACAS uplift 25% (+GBP 6,500-10,400)</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td>Disability Discrimination (EqA s.15)</td>
+      <td>ADHD disability; stress-related unfitness; no reasonable adjustments offered; dismissal during fit note</td>
+      <td>Injury to feelings (Vento): GBP 25,000-40,000</td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td>Failure to Make Adjustments (EqA s.20-21)</td>
+      <td>Fit note disregarded; no postponement; no remote attendance; no pre-disclosure; no support</td>
+      <td>Subsumed in Vento award; declaration of breach</td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td>Harassment (EqA s.26)</td>
+      <td>9-month pattern (vulgarity, dehumanization, isolation, humiliation, intimidation); post-dismissal threats</td>
+      <td>Injury to feelings (Vento, separate): GBP 25,000-40,000; Aggravated damages: GBP 3,000-8,000</td>
+    </tr>
+    <tr>
+      <td><strong>5</strong></td>
+      <td>Unlawful Deduction (ERA s.13)</td>
+      <td>Equipment deduction threatened (GBP 530); no contractual basis; no written agreement</td>
+      <td>Declaration; Injunction prohibiting deductions; Statutory interest</td>
+    </tr>
+    <tr>
+      <td><strong>6</strong></td>
+      <td>Additional Hours / Unpaid Work (ERA s.13; Contract)</td>
+      <td>40-70 hrs/month undocumented; GBP 17.09/hr implied rate; time-logging prohibited</td>
+      <td>Payment for undocumented hours: GBP 5,144-8,994 (net); Statutory interest</td>
+    </tr>
+    <tr>
+      <td><strong>7</strong></td>
+      <td>Breach of Contract (Implied Term)</td>
+      <td>Mutual trust &amp; confidence violated; dehumanization; coercion; misrepresentation</td>
+      <td>Damages for breach: GBP 2,000-5,000; Statutory interest</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>A12.2 Global Award Estimate</h2>
+
+<p>
+  <strong>TOTAL POTENTIAL AWARD: GBP 76,688 - GBP 137,935</strong>
+</p>
+
+<p>
+  <strong>Most Likely (Mid-Range): GBP 98,644 - GBP 125,000</strong>
+</p>
+
+<h2>A12.3 Declaration Sought</h2>
+
+<ol>
+  <li>Dismissal on 13 October 2025 was unfair under ERA 1996 s.98(4)</li>
+  <li>Dismissal was automatically unfair under ERA 1996 s.104 (assertion of s.57A right)</li>
+  <li>Employer breached ACAS Code (six distinct provisions); uplift of 25% applies</li>
+  <li>Employer discriminated based on disability (ADHD) contrary to EqA 2010 s.15, s.20-21</li>
+  <li>Employer harassed Claimant contrary to EqA 2010 s.26</li>
+  <li>Employer breached implied term of mutual trust and confidence</li>
+  <li>Employer threatened unlawful deductions contrary to ERA 1996 s.13</li>
+  <li>Claimant's time off on 11 October 2025 was protected under ERA 1996 s.57A</li>
+</ol>
+
+<h2>A12.4 Injunctive Relief</h2>
+
+<ol>
+  <li><strong>Prohibition on deductions:</strong> Employer prohibited from making any deduction from final wages, pension, benefits, or other payments for equipment, losses, or alleged damage.</li>
+  <li><strong>Prohibition on further harassment:</strong> Employer and all agents prohibited from contacting Claimant with threats, intimidation, or legal action related to post-dismissal disputes.</li>
+</ol>
+
+<h2>A12.5 Costs &amp; Expenses</h2>
+
+<ol>
+  <li><strong>Tribunal fees:</strong> Claimant paid fee to submit claim; seeks reimbursement from respondent</li>
+  <li><strong>Legal representation (if applicable):</strong> If instructed solicitor/counsel, seek recovery of reasonable legal costs</li>
+  <li><strong>Statutory interest:</strong> 8% per annum from date of each breach/underpayment until date of award</li>
+</ol>
+
+<hr class="page-break"/>
+
+<h1>Conclusion</h1>
+
+<p>
+  This claim presents a strong, well-documented case across multiple legal heads:
+</p>
+
+<ol>
+  <li><strong>Unfair Dismissal:</strong> Reason not genuine (moving goalposts; misstatement of law); Procedure massively unfair (6 ACAS breaches); Financial motive evident (cost-cutting); Predetermination manifest (trust messages before hearing).</li>
+  
+  <li><strong>Disability Discrimination:</strong> ADHD diagnosis confirmed (July 2025 psychiatric assessment); Employer knew of health issue (GP referral October); Fit note issued same day as hearing; No adjustments offered despite mandatory duty under s.20-21 EqA.</li>
+  
+  <li><strong>Harassment:</strong> 9-month pattern documented (vulgarity, dehumanization, isolation); Public humiliation (WhatsApp announcement); Post-dismissal intimidation (legal threats, equipment demands); Cumulative effect destroys dignity.</li>
+  
+  <li><strong>Unlawful Deduction &amp; Additional Hours:</strong> Equipment deduction threatened without contractual basis (ERA s.13 breach); Additional hours (40-70/month) worked but undocumented (time-logging prohibited); ERA s.13 breach for both threats and underpayment.</li>
+  
+  <li><strong>Breach of Contract:</strong> Implied term of mutual trust and confidence fundamentally breached through sustained pattern of disrespect, coercion, and bad faith.</li>
+</ol>
+
+<p>
+  <strong>Strengths of Claim:</strong>
+</p>
+
+<ul>
+  <li>Comprehensive documentary evidence (60+ exhibits: emails, chats, payslips, medical records)</li>
+  <li>Contemporaneous records (most evidence from emails/WhatsApp sent at time of conduct)</li>
+  <li>Objective procedural violations (ACAS Code breaches not matters of discretion)</li>
+  <li>Medical evidence (ADHD diagnosis; fit notes)</li>
+  <li>Financial motive clearly documented (cash-flow crisis disclosure 10 days before dismissal)</li>
+  <li>Predetermination signals (trust messages before formal hearing)</li>
+  <li>Misstatement of law on record (s.57A false assertion)</li>
+  <li>Multiple legal heads (unfair dismissal AND discrimination AND harassment = cumulative liability)</li>
+</ul>
+
+<p>
+  <strong>Estimated Tribunal Award Range: GBP 76,688 - GBP 137,935</strong>
   <br/>
-  <br/>
+  <strong>Most Likely Range (Mid-Scenario): GBP 98,644 - GBP 125,000</strong>
+</p>
+
+<p style="margin-top: 20pt; font-size: 10pt; text-align: center; color: #666;">
   ___________
   <br/>
   Nikodem Klasik (Claimant, in person)
   <br/>
   16 November 2025
+  <br/>
+  <br/>
+  <strong>STATEMENT OF TRUTH</strong>
+  <br/>
+  <br/>
+  I believe that the facts stated in this document are true. I understand that proceedings for contempt of court may be brought against anyone who makes, or causes to be made, a false statement in a document verified by a statement of truth without an honest belief in its truth.
 </p>
 
 </body>
 
 </html>
+
+
